@@ -1,0 +1,10 @@
+# Site settings
+domain: zealvurte.github.io
+url: https://zealvurte.github.io/owlls
+
+# Build settings
+
+# Exclude from processing.
+# exclude:
+
+# For technical reasons, this file is *NOT* reloaded automatically when you use 'bundle exec jekyll serve'. If you change this file, please restart the server process.

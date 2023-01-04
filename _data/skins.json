@@ -1,0 +1,639 @@
+[
+	{
+		"name": "Haroeris",
+		"hero": "Ana",
+		"season": "2021",
+		"event": "Summer Showdown",
+		"themes": [
+			"Ana's Egyptian Heritage",
+			"Egyptian sky God Haroeris"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-06-06",
+					"end": "2021-06-19"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Pirate Ship",
+		"hero": "Bastion",
+		"season": "2021",
+		"event": "Countdown Cup",
+		"themes": [
+			"\"Pirate Ship Bastion\" composition meta"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-08-18",
+					"end": "2021-08-30"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "GOAT",
+		"hero": "Brigitte",
+		"season": "2020",
+		"event": "Season start",
+		"themes": [
+			"2019 \"GOATS\" 3-3 composition meta"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2020-02-06",
+					"end": "2021-02-19"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-12-06"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "2020 Pacific All-Stars",
+		"hero": "D.Va",
+		"season": "2020",
+		"event": "All-Stars - Pacific",
+		"themes": [
+			"Celestial"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2020-09-29",
+					"end": "2020-10-12"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Thunder",
+		"hero": "Doomfist",
+		"season": "2019",
+		"event": "Grand Final win by San Francisco Shock",
+		"themes": [
+			"Volcanic",
+			"lightning",
+			"San Francisco Shock"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2019-03-26",
+					"end": "2019-04-09"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-11-17"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Good and Evil",
+		"hero": "Echo",
+		"season": "2020",
+		"event": "MVP win by Kim \"Fleta\" Byung-sun",
+		"themes": [
+			"Fleta's Echo",
+			"duality of Fleta's calm personality and aggressive gameplay",
+			"good & evil",
+			"angel & devil",
+			"sun & moon"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-03-23",
+					"end": "2021-04-06"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-12-06"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "2018 Pacific All-Stars",
+		"hero": "Genji",
+		"season": "2018",
+		"event": "All-Stars - Pacific",
+		"themes": [
+			"Pacific islands",
+			"fire"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2018-08-17",
+					"end": "2018-08-27"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Happi",
+		"hero": "Genji",
+		"season": "2022",
+		"event": "Summer Showdown",
+		"themes": [
+			"Japanese summer festivals"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-09-06",
+					"end": "2022-10-03",
+					"endNote": "Originally stated to be 2022-11-15"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-10-04",
+					"endNote": "Originally stated to be 2022-11-15"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Dallas Summer",
+		"hero": "Genji",
+		"season": "2022",
+		"event": "Summer Showdown - West win by Dallas Fuel",
+		"themes": [
+			"Japanese summer festivals",
+			"Dallas Fuel"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-11-17"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Shanghai Summer",
+		"hero": "Genji",
+		"season": "2022",
+		"event": "Summer Showdown - East win by Shanghai Dragons",
+		"themes": [
+			"Japanese summer festivals",
+			"Shangai Dragons"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-11-17"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "2019 Pacific All-Stars",
+		"hero": "Lúcio",
+		"season": "2019",
+		"event": "All-Stars - Pacific",
+		"themes": [
+			"Sun",
+			"day"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2019-05-07",
+					"end": "2019-05-22"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "MM-Mei",
+		"hero": "Mei",
+		"season": "2021",
+		"event": "May Melee",
+		"themes": [
+			"Mixed martial arts",
+			"boxing"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-04-28",
+					"end": "2021-05-11"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "2019 Atlantic All-Stars",
+		"hero": "Mercy",
+		"season": "2019",
+		"event": "All-Stars - Atlantic",
+		"themes": [
+			"Moon",
+			"night"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2019-05-07",
+					"end": "2019-05-22"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Royal Knight",
+		"hero": "Mercy",
+		"season": "2022",
+		"event": "Midseason Madness",
+		"themes": [
+			"2021's June Joust",
+			"medieval knight jousting"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-07-19",
+					"end": "2022-08-19"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-10-04",
+					"end": "2022-11-16"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Royal Gladiator",
+		"hero": "Mercy",
+		"season": "2022",
+		"event": "Midseason Madness win by Los Angeles Gladiators",
+		"themes": [
+			"2021's June Joust",
+			"medieval knight jousting",
+			"Los Angeles Gladiators"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-11-17"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Luchador",
+		"hero": "Reaper",
+		"season": "2022",
+		"event": "Kickoff Clash",
+		"themes": [
+			"Reaper's Mexican heritage",
+			"Mexican Wrestling",
+			"Day of the Dead"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-05-17",
+					"end": "2022-06-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-10-04",
+					"end": "2022-11-16"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Lion Luchador",
+		"hero": "Reaper",
+		"season": "2022",
+		"event": "Kickoff Clash - West win by Los Angeles Gladiators",
+		"themes": [
+			"Reaper's Mexican heritage",
+			"Mexican Wrestling",
+			"Day of the Dead",
+			"Los Angeles Gladiators"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-05-17",
+					"end": "2022-06-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-10-04",
+					"end": "2022-11-16"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Tiger Luchador",
+		"hero": "Reaper",
+		"season": "2022",
+		"event": "Kickoff Clash - East win by Seoul Dynasty",
+		"themes": [
+			"Reaper's Mexican heritage",
+			"Mexican Wrestling",
+			"Day of the Dead",
+			"Seoul Dynasty"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-05-17",
+					"end": "2022-06-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-10-04",
+					"end": "2022-11-16"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "2020 Atlantic All-Stars",
+		"hero": "Reinhardt",
+		"season": "2020",
+		"event": "All-Stars - Atlantic",
+		"themes": [
+			"Gaia"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2020-09-29",
+					"end": "2020-10-12"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Midas",
+		"hero": "Roadhog",
+		"season": "2020",
+		"event": "Grand Final win by San Francisco Shock",
+		"themes": [
+			"Roadhog's meta",
+			"San Francisco Shock",
+			"back-to-back win",
+			"San Francisco's 1849 gold rush",
+			"King Midas of Phrygia's mythical golden touch"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-03-23",
+					"end": "2021-04-06"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-12-06"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Zhulong",
+		"hero": "Sombra",
+		"season": "2021",
+		"event": "Grand Final win by Shanghai Dragons, and Grand Final MVP win by Lee \"Lip\" Jae-won",
+		"themes": [
+			"Shanghai Dragons",
+			"Lip's Sombra",
+			"Chinese dragons"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-03-15",
+					"end": "2022-03-28"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-12-06"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "2018 Atlantic All-Stars",
+		"hero": "Tracer",
+		"season": "2018",
+		"event": "All-Stars - Atlantic",
+		"themes": [
+			"Atlantis",
+			"water"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2018-08-17",
+					"end": "2018-08-27"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Ange De La Mort",
+		"hero": "Widowmaker",
+		"season": "2021",
+		"event": "June Joust",
+		"themes": [
+			"2020's All-Stars - Widowmaker 1v1 tournament",
+			"Angel of Death"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2021-06-09",
+					"end": "2021-06-21"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Flying Ace",
+		"hero": "Winston",
+		"season": "2018",
+		"event": "Grand Final win by London Spitfire",
+		"themes": [
+			"London Spitfire",
+			"Spitfire pilot",
+			"Spitfire Mark II \"Aces High\""
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2019-08-29",
+					"end": "2019-09-16"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-11-17"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Alien",
+		"hero": "Zarya",
+		"season": "2019",
+		"event": "MVP win by Jay \"Sinatraa\" Won",
+		"themes": [
+			"Sinatraa's Zarya",
+			"Frank Sinatra",
+			"Aliens"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2020-06-16",
+					"end": "2020-06-30"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			}
+		]
+	},
+	{
+		"name": "Zen-Nakji",
+		"hero": "Zenyatta",
+		"season": "2018",
+		"event": "MVP win by Sung-hyeon \"Jjonak\" Bang",
+		"themes": [
+			"Jjonak's Zenyatta",
+			"jjomullak nakji (fumbling octopus)"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2019-06-27",
+					"end": "2019-07-14"
+				},
+				"source": "Overwatch Store",
+				"cost": 200
+			},
+			{
+				"period": {
+					"start": "2022-12-06"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	},
+	{
+		"name": "Clockwork",
+		"hero": "Zenyatta",
+		"season": "2022",
+		"event": "Retirement of Matthew \"Clockwork\" Dias",
+		"themes": [
+			"Clockwork"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-10-04",
+					"end": "2022-11-16"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300
+			}
+		]
+	}
+]

@@ -1,0 +1,14 @@
+[
+	{
+		"order": "1",
+		"name": "Tank"
+	},
+	{
+		"order": "2",
+		"name": "Damage"
+	},
+	{
+		"order": "3",
+		"name": "Support"
+	}
+]

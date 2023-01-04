@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+		<meta name="color-scheme" content="dark light"/>
+		<meta name="theme-color" content="#f79e18"/>
+		
+		<title>OWL Legendary Skins</title>
+		<meta name="description" content="A list of the Overwatch League legendary skins, with their store availability, and background information."/>
+		
+		<link type="font/woff2" href="fonts/Rajdhani-Bold.woff2" as="font" rel="preload" blocking="render" crossorigin/>
+		<link type="text/css" href="styles/owlls.css" rel="stylesheet"/>
+		<script type="module" src="scripts/owlls.js"></script>
+	</head>
+	<body id="owlls">
+		<header id="intro">
+			<h1 id="heading">Overwatch <span class="owl-league">League</span> Legendary Skins</h1>
+			<nav id="nav">
+				<p class="input"><select type="text" id="nav_hero" name="filterByHero" placeholder="Select a hero"/>
+						<option value="">Any</option>
+						{%- for role in site.data.roles -%}
+							{%- assign roleHeroes = site.data.heroes | where: "role", role.name -%}
+							{%- if roleHeroes.size > 0 %}
+						<optgroup label="{{ role.name }}">
+								{%- for roleHero in roleHeroes -%}
+									{%- assign roleHeroSkins = site.data.skins | where: "hero", roleHero.name -%}
+									{%- if roleHeroSkins.size > 0 %}
+							<option>{{ roleHero.name }}</option>
+									{%- endif -%}
+								{%- endfor %}
+						</optgroup>
+							{%- endif -%}
+						{%- endfor %}
+					</select><label for="nav_hero">Hero</label></p>
+				<p class="input"><input type="search" id="nav_search" name="searchByName" autocomplete="on" placeholder="Search for a skin by name" list="nav_search-data"/><label for="nav_search">Search</label>
+					<datalist id="nav_search-data">
+						{%- assign skins = site.data.skins | sort: "name" %}
+						{%- for skin in skins %}
+						<option>{{ skin.name }}</option>
+						{%- endfor %}
+					</datalist></p>
+				<p class="input"><input type="checkbox" id="nav_availability" name="filterByAvailability" checked/> <label for="nav_availability">Hide unavailable</label></p>
+			</nav>
+		</header>
+		<div id="wrapper" class="wrapper">
+			<main id="content">
+				<div id="no-skins" class="group" data-state="active">
+					<p><strong>No skins found.</strong></p>
+				</div>{{ content }}
+			</main>
+			<footer id="outro"></footer>
+		</div>
+		<div id="tooltip" class="tooltip" data-state="inert"></div>
+	</body>
+</html>
