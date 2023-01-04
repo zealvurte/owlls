@@ -1,3 +1,15 @@
+const isNumeric = function (value) {
+	if (typeof(value) === 'number' || typeof(value) === 'bigint' || (typeof(value) === 'string' && value == 0)) {
+		//console.debug('isNumeric',value,'->',true,'fast')
+		return true
+	}
+	else if (value === true || !value || typeof(value) === 'object' || typeof(value) === 'function' || typeof(value) === 'symbol' || (typeof(value) === 'string' && value.match(/^\s+$/))) {
+		//console.debug('isNumeric',value,'->',false,'fast')
+		return false
+	}
+	//console.debug('isNumeric',value,'->',!isNaN(value))
+	return !isNaN(value)
+}
 const setElementData = function (element,property,value,type) {
 	const d = element.dataset
 	let pa = property, r
