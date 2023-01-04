@@ -174,7 +174,7 @@ const doAction = function (event) {
 }
 const isCurrentlyAvailable = function (start,end) {
 	const now = Date.now()
-	return (start ? new Date(start) <= now : true) && (end = end ? new Date(end) >= now : true)
+	return (start ? new Date(start) <= now : true) && (end ? new Date(end) >= now : true)
 }
 const filtersChanged = function (event) {
 	const noSkinsState = [...skinArticles].filter(filterSkins).length === 0 ? 'active' : 'inert'
