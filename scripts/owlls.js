@@ -209,7 +209,7 @@ const navSearchDatalist = document.getElementById('nav_search-data')
 const navAvailabilityCheckbox = document.getElementById('nav_availability')
 const contentMain = document.getElementById('content')
 const noSkins = document.getElementById('no-skins')
-let skinArticles = document.querySelectorAll('article.skin')
+const skinArticles = document.querySelectorAll('article.skin')
 
 // Process skin availability
 skinArticles.forEach(s => {
