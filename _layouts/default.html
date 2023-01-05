@@ -1,3 +1,4 @@
+{%- assign skins = site.data.skins | sort: "name" -%}
 <!DOCTYPE html>
 <html lang="en-gb">
 	<head>
@@ -19,26 +20,26 @@
 			<nav id="nav">
 				<p class="input"><select type="text" id="nav_hero" name="filterByHero" placeholder="Select a hero"/>
 						<option value="">Any</option>
-						{%- for role in site.data.roles -%}
-							{%- assign roleHeroes = site.data.heroes | where: "role", role.name -%}
-							{%- if roleHeroes.size > 0 %}
+{%- for role in site.data.roles -%}
+	{%- assign roleHeroes = site.data.heroes | where: "role", role.name -%}
+	{%- if roleHeroes.size > 0 -%}
+		{%- assign skinHeroNames = skins | map: "hero" -%}
+		{%- assign skinRoleHeroes = roleHeroes | where_exp: "item", "skinHeroNames contains item.name" -%}
+		{%- if skinRoleHeroes.size > 0 %}
 						<optgroup label="{{ role.name }}">
-								{%- for roleHero in roleHeroes -%}
-									{%- assign roleHeroSkins = site.data.skins | where: "hero", roleHero.name -%}
-									{%- if roleHeroSkins.size > 0 %}
-							<option>{{ roleHero.name }}</option>
-									{%- endif -%}
-								{%- endfor %}
+			{%- for skinRoleHero in skinRoleHeroes %}
+							<option>{{ skinRoleHero.name }}</option>
+			{%- endfor %}
 						</optgroup>
-							{%- endif -%}
-						{%- endfor %}
+		{%- endif -%}
+	{%- endif -%}
+{%- endfor %}
 					</select><label for="nav_hero">Hero</label></p>
 				<p class="input"><input type="search" id="nav_search" name="searchByName" autocomplete="on" placeholder="Search for a skin by name" list="nav_search-data"/><label for="nav_search">Search</label>
 					<datalist id="nav_search-data">
-						{%- assign skins = site.data.skins | sort: "name" %}
-						{%- for skin in skins %}
+{%- for skin in skins %}
 						<option>{{ skin.name }}</option>
-						{%- endfor %}
+{%- endfor %}
 					</datalist></p>
 				<p class="input"><input type="checkbox" id="nav_availability" name="filterByAvailability" checked/> <label for="nav_availability">Hide unavailable</label></p>
 			</nav>
