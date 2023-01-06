@@ -184,6 +184,21 @@ const doAction = function (event) {
 		}
 	})
 }
+const hideAfterEventHandler = function (event) {
+	const t = event.target
+	if (t === event.currentTarget) {
+		t.hidden = true
+		return true
+	}
+}
+const hideAfterEvent = function (element,events) {
+	const handlerController = new AbortController();
+	(Array.isArray(events) ? events : [events]).forEach(e => {
+		element.addEventListener(e,(event) => hideAfterEventHandler(event) && handlerController.abort(),{
+			'signal': handlerController.signal
+		})
+	})
+}
 const isCurrentlyAvailable = function (start,end) {
 	const now = Date.now()
 	return (start ? new Date(start) <= now : true) && (end ? new Date(end) >= now : true)
@@ -197,6 +212,12 @@ const filtersChanged = function (event) {
 const filterSkins = function (skin) {
 	const newState = ((navAvailabilityCheckbox.checked && !getElementData(skin,'available','boolean')) || (navHeroSelect.value !== '' && navHeroSelect.value !== getElementData(skin,'hero','string')) || (navSearch.value !== '' && getElementData(skin,'name','string').toLowerCase().indexOf(navSearch.value.toLowerCase()) < 0)) ? 'inert' : 'active'
 	if (getElementData(skin,'state','string') !== newState) {
+		if (newState === 'inert') {
+			hideAfterEvent(skin,['animationend','animationcancel'])
+		}
+		else {
+			skin.hidden = false
+		}
 		setElementData(skin,'state',newState,'string')
 	}
 	return newState === 'active'

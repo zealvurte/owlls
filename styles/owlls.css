@@ -264,6 +264,7 @@ html {
 	--input-focused-label-background-color: var(--accent-color);
 	
 	--transition-easing: cubic-bezier(0.4, 0, 0.2, 1);
+	--transition-very-short-duration: 0.125s;
 	--transition-short-duration: 0.25s;
 	--transition-medium-duration: 0.5s;
 	--transition-long-duration: 1s;
@@ -1077,9 +1078,34 @@ span.hyphen-nobreak {
 	position: absolute;
 	margin: auto;
 	align-self: center;
+	
+	transition: opacity var(--transition-short-duration) var(--transition-easing), visibility 0s linear 0s;
 }
 #owlls #no-skins[data-state="inert"] {
-	display: none;
+	opacity: 0;
+	visibility: hidden;
+	
+	transition: opacity var(--transition-short-duration) var(--transition-easing), visibility 0s linear var(--transition-short-duration);
+}
+@keyframes skin-in {
+	0% {
+		opacity: 0;
+		transform: scale(1.2,1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1,1);
+	}
+}
+@keyframes skin-out {
+	0% {
+		opacity: 1;
+		transform: scale(1,1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.9,0.9);
+	}
 }
 #owlls article.skin {
 	position: relative;
@@ -1093,8 +1119,12 @@ span.hyphen-nobreak {
 	box-shadow: 0 var(--border-thinnest) var(--border-thin) rgb(0 0 0 / 0.5);
 	
 	transition: box-shadow var(--transition-medium-duration) var(--transition-easing);
+	animation: var(--transition-very-short-duration) ease-in both skin-in;
 }
 #owlls article.skin[data-state="inert"] {
+	animation: var(--transition-short-duration) ease-out both skin-out;
+}
+#owlls article.skin[data-state="inert"][hidden] {
 	display: none;
 }
 #owlls article.skin:hover {

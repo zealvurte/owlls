@@ -10,7 +10,7 @@ slug: home
 	{%- assign skinImage = skinImage | replace: " ", "-" -%}
 	{%- assign skinID = skinImage | replace: "_", "-" | prepend: "skin-" -%}
 	{%- assign skinAvailabilities = skin.availabilities | reverse %}
-				<article id="{{ skinID }}" class="skin" data-name="{{ skin.name }}" data-hero="{{ skin.hero }}" data-season="{{ skin.season }}" data-availability-start="{{ skinAvailabilities.first.period.start }}" data-availability-end="{{ skinAvailabilities.first.period.end }}" data-source="{{ skinAvailabilities.first.source }}" data-cost="{{ skinAvailabilities.first.cost }}" data-state="inert">
+				<article id="{{ skinID }}" class="skin" data-name="{{ skin.name }}" data-hero="{{ skin.hero }}" data-season="{{ skin.season }}" data-availability-start="{{ skinAvailabilities.first.period.start }}" data-availability-end="{{ skinAvailabilities.first.period.end }}" data-source="{{ skinAvailabilities.first.source }}" data-cost="{{ skinAvailabilities.first.cost }}" data-state="inert" hidden>
 					<header>
 						<h2>{{ skin.name }}</h2>
 						<p>{{ skin.hero }} (<time>{{ skin.season }}</time>)</p>
