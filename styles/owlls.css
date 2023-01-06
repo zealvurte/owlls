@@ -211,19 +211,23 @@ html {
 	--column-width: calc(var(--line-length-max) + (var(--margin-thick) * 2));	/* 43.5rem : 696px */
 	
 	--text-color: #EEE;
+	--text-color-rgb: 238,238,238;
 	--faded-text-color: #CCC;
 	--faded-text-color-rgb: 204,204,204;
-	--blended-faded-text-color: #cec7b4;	/* Hard-light blend with rgb(123,140,168) */
-	--blended-faded-text-color-rgb: 206,198,180;	/* Hard-light blend with rgb(123,140,168) */
+	--hard-light-faded-text-color: #cec7b4;	/* Hard-light blend with rgb(123,140,168) */
+	--hard-light-faded-text-color-rgb: 206,198,180;	/* Hard-light blend with rgb(123,140,168) */
 	--disabled-text-color: #999;
 	--disabled-text-color-rgb: 153,153,153;
 	--background-color: #222;
+	--background-color-rgb: 34,34,34;
 	--light-background-color: #333;
+	--light-background-color-rgb: 51,51,51;
 	--dark-background-color: #111;
+	--dark-background-color-rgb: 17,17,17;
 	--accent-color: #f79e18;
 	--accent-color-rgb: 247,158,24;
-	--blended-accent-color: #f79012;	/* Hard-light blend with rgb(123,140,168) */
-	--blended-accent-color-rgb: 247,147,18;	/* Hard-light blend with rgb(123,140,168) */
+	--hard-light-accent-color: #f79012;	/* Hard-light blend with rgb(123,140,168) */
+	--hard-light-accent-color-rgb: 247,147,18;	/* Hard-light blend with rgb(123,140,168) */
 	--dark-accent-color: #c67a00;
 	--dark-accent-color-rgb: 198,122,0;
 	
@@ -255,7 +259,7 @@ html {
 	--input-focused-border-color: var(--accent-color);
 	--input-focused-placeholder-text-color: var(--input-filled-placeholder-text-color);
 	--input-focused-icon-color: var(--accent-color);
-	--blended-input-focused-icon-color: var(--blended-accent-color);
+	--hard-light-input-focused-icon-color: var(--hard-light-accent-color);
 	--input-focused-label-text-color: var(--input-filled-label-text-color);
 	--input-focused-label-background-color: var(--accent-color);
 	
@@ -556,7 +560,7 @@ select {
 	color: var(--input-text-color);
 	background-color: var(--input-background-color);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: color var(--transition-short-duration) var(--transition-easing), background-color var(--transition-short-duration) var(--transition-easing), border-color var(--transition-short-duration) var(--transition-easing);
 }
 select {
 	padding-right: calc(var(--line-space) + var(--margin-thin) * 2);
@@ -593,7 +597,7 @@ select:is(:focus,:focus-visible) {
 :is(input,select)::placeholder {
 	color: var(--input-placeholder-text-color);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: color var(--transition-short-duration) var(--transition-easing);
 }
 :is(input,select):is(:hover,:focus)::placeholder {
 	color: var(--input-focused-placeholder-text-color);
@@ -622,7 +626,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	mask: url(../images/icons.svg#input-clear);
 	transform: scale(0);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: background-color var(--transition-short-duration) var(--transition-easing), opacity var(--transition-short-duration) var(--transition-easing), transform var(--transition-short-duration) var(--transition-easing);
 	
 	pointer-events: none !important;
 }
@@ -661,7 +665,7 @@ input[type="checkbox"]::before {
 	mask: url(../images/icons.svg#input-clear);
 	transform: scale(0);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: background-color var(--transition-short-duration) var(--transition-easing), transform var(--transition-short-duration) var(--transition-easing);
 	
 	pointer-events: none;
 }
@@ -684,7 +688,7 @@ label {
 	color: var(--input-label-text-color);
 	background-color: var(--input-label-background-color);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: color var(--transition-short-duration) var(--transition-easing), background-color var(--transition-short-duration) var(--transition-easing), border-color var(--transition-short-duration) var(--transition-easing);
 }
 :is(input:is([type="search"]:not(:placeholder-shown),[type="checkbox"]:checked),select:is(:not([multiple]),[multiple][data-value]:not([data-value=""]))) + label {
 	border-color: var(--input-filled-border-color);
@@ -760,7 +764,7 @@ button.icon::before {
 	
 	background-color: var(--input-icon-color);
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: background-color var(--transition-short-duration) var(--transition-easing);
 }
 button.icon.cutout-icon::before {
 	inset: var(--margin-thin);
@@ -1035,7 +1039,9 @@ span.hyphen-nobreak {
 	padding: var(--margin);
 	overflow: visible;
 	
-	background-color: var(--light-background-color);
+	background-color: rgba(var(--light-background-color-rgb),0.8);
+	-webkit-backdrop-filter: blur(var(--border));
+	backdrop-filter: blur(var(--border));
 }
 #owlls #nav::after {
 	content: '';
@@ -1132,8 +1138,10 @@ span.hyphen-nobreak {
 	text-align: left;
 	
 	color: var(--background-color);
-	background-color: var(--blended-accent-color);
+	background-color: var(--hard-light-accent-color);
 	mix-blend-mode: hard-light;
+	-webkit-backdrop-filter: blur(var(--border-thin));
+	backdrop-filter: blur(var(--border-thin));
 	
 	transition: opacity var(--transition-short-duration) var(--transition-easing) var(--transition-short-duration), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;	/* When discrete animation properties become transitionable, add delay for background-color and mix-blend-mode */
 }
@@ -1186,9 +1194,10 @@ span.hyphen-nobreak {
 	margin: auto;
 	padding: 0;
 	box-sizing: border-box;
+	border-radius: 45%;
 	z-index: 1;
 	
-	background-color: var(--text-color);
+	background-color: rgba(var(--text-color-rgb),0.8);
 	-webkit-mask: url(../images/icons.svg#input-info), url(../images/icons.svg#circle);
 	mask: url(../images/icons.svg#input-info), url(../images/icons.svg#circle);
 	--mask-size: 75%, 100%;	/* 3.75rem, 5rem */
@@ -1202,22 +1211,24 @@ span.hyphen-nobreak {
 	mask-composite: subtract;
 	transform: scale(0.95);
 	opacity: 0;
+	-webkit-backdrop-filter: blur(var(--border-thin));
+	backdrop-filter: blur(var(--border-thin));
 	
-	transition: all var(--transition-medium-duration) var(--transition-easing);
+	transition: opacity var(--transition-medium-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing);
 	
 	pointer-events: none;
 }
 #owlls article.skin[data-expanded]:is(*,:hover) > div.wrapper > main > p::before {
 	transform: scale(2.5);
-	opacity: 0;
+	opacity: 1;
 	
-	transition: all var(--transition-short-duration) var(--transition-easing);
+	transition: opacity var(--transition-short-duration) var(--transition-easing), transform var(--transition-short-duration) var(--transition-easing);
 }
 #owlls article.skin:hover > div.wrapper > main > p::before {
 	transform: scale(1);
-	opacity: 0.8;
+	opacity: 1;
 	
-	transition: all var(--transition-medium-duration) var(--transition-easing);
+	transition: opacity var(--transition-medium-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing);
 }
 #owlls article.skin > div.wrapper > main > p > img {
 	display: block;
@@ -1252,8 +1263,10 @@ span.hyphen-nobreak {
 	text-align: left;
 	
 	color: var(--background-color);
-	background-color: var(--blended-faded-text-color);
+	background-color: var(--hard-light-faded-text-color);
 	mix-blend-mode: hard-light;
+	-webkit-backdrop-filter: blur(var(--border-thin));
+	backdrop-filter: blur(var(--border-thin));
 	
 	transition: opacity var(--transition-short-duration) var(--transition-easing) var(--transition-short-duration), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;	/* When discrete animation properties become transitionable, add delay for background-color and mix-blend-mode */
 }
