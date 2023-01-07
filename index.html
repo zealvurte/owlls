@@ -47,7 +47,7 @@ slug: home
 		{%- assign article = skin.article -%}
 										<div class="group">
 											<p>Article</p>
-											<p><a href="{% if article.archiveURL %}{{ article.archiveURL }}{% else %}{{ article.url }}{% endif %}>" target="_blank" rel="external"{% if article.archiveURL %} class="archived" data-archived-url="{{ article.url}}"{% endif %}{% if article.title %} title="{{ article.title }}"{% endif %}>{% if article.title %}{{ article.title }}{% else %}{{ article.url }}{% endif %} [<time datetime="{% if article.datetime %}{{ article.datetime }}{% else %}{{ article.date }}{% endif %}"><span class="hyphen-nobreak">{{ article.date }}</span></time>]{% if article.archiveURL %}[Archived]{% endif %}</a></p>
+											<p><a href="{% if article.archiveURL %}{{ article.archiveURL }}{% else %}{{ article.url }}{% endif %}" target="_blank" rel="external"{% if article.archiveURL %} class="archived" data-archived-url="{{ article.url}}"{% endif %}{% if article.title %} title="{{ article.title }}"{% endif %}>{% if article.title %}{{ article.title }}{% else %}{{ article.url }}{% endif %} [<time datetime="{% if article.datetime %}{{ article.datetime }}{% else %}{{ article.date }}{% endif %}"><span class="hyphen-nobreak">{{ article.date }}</span></time>]{% if article.archiveURL %}[Archived]{% endif %}</a></p>
 										</div>
 	{%- endif -%}
 										<div class="group">
