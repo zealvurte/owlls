@@ -8,6 +8,11 @@
 			"Ana's Egyptian Heritage",
 			"Egyptian sky God Haroeris"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/haroeris-ana-skin-celebrates-summer-showdown-tournament",
+			"title": "Haroeris Ana Skin Celebrates Summer Showdown Tournament",
+			"date": "2021-07-06"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -15,7 +20,14 @@
 					"end": "2021-06-19"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/haroeris-ana-skin-celebrates-summer-showdown-tournament",
+						"title": "Haroeris Ana Skin Celebrates Summer Showdown Tournament",
+						"date": "2021-07-06"
+					}
+				]
 			}
 		]
 	},
@@ -27,6 +39,11 @@
 		"themes": [
 			"\"Pirate Ship Bastion\" composition meta"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/pirate-ship-bastion-skin-sets-sail-for-countdown-cup-tournament",
+			"title": "Pirate Ship Bastion Skin Sets Sail for Countdown Cup Tournament",
+			"date": "2021-08-18"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -34,7 +51,14 @@
 					"end": "2021-08-30"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/pirate-ship-bastion-skin-sets-sail-for-countdown-cup-tournament",
+						"title": "Pirate Ship Bastion Skin Sets Sail for Countdown Cup Tournament",
+						"date": "2021-08-18"
+					}
+				]
 			}
 		]
 	},
@@ -46,6 +70,11 @@
 		"themes": [
 			"2019 \"GOATS\" 3-3 composition meta"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/23303228",
+			"title": "GOATS is Back, But in the Best Possible Way",
+			"date": "2020-02-06"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -53,7 +82,29 @@
 					"end": "2021-02-19"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/23303228",
+						"title": "GOATS is Back, But in the Best Possible Way",
+						"date": "2020-02-06"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-08-11",
+					"end": "2021-08-23"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-skins-from-the-vault-available-for-limited-time",
+						"title": "Legendary Skins from the Vault Available for Limited Time",
+						"date": "2021-08-11"
+					}
+				]
 			},
 			{
 				"period": {
@@ -61,7 +112,21 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1600209764910174209",
+						"title": "Some pretty cool Overwatch League skins are back in the shop 👀",
+						"date": "2022-12-06",
+						"datetime": "2022-12-06T19:25:13.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1610381251357155331",
+						"title": "New year, new vault skins dropping 1/5 👀⭐",
+						"date": "2023-01-03",
+						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -73,6 +138,11 @@
 		"themes": [
 			"Celestial"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/legendary-all-stars-skins-revealed-for-reinhardt-and-d-va",
+			"title": "Legendary All-Stars Skins Revealed for Reinhardt and D.Va",
+			"date": "2020-09-13"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -80,14 +150,44 @@
 					"end": "2020-10-12"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-all-stars-skins-revealed-for-reinhardt-and-d-va",
+						"title": "Legendary All-Stars Skins Revealed for Reinhardt and D.Va",
+						"date": "2020-09-13"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -101,6 +201,11 @@
 			"lightning",
 			"San Francisco Shock"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/23363715",
+			"title": "Thunder Doomfist Revealed to Celebrate Shock’s 2019 Championship",
+			"date": "2019-03-24"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -108,7 +213,29 @@
 					"end": "2019-04-09"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/23363715",
+						"title": "Thunder Doomfist Revealed to Celebrate Shock’s 2019 Championship",
+						"date": "2019-03-24"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-08-11",
+					"end": "2021-08-23"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-skins-from-the-vault-available-for-limited-time",
+						"title": "Legendary Skins from the Vault Available for Limited Time",
+						"date": "2021-08-11"
+					}
+				]
 			},
 			{
 				"period": {
@@ -116,7 +243,15 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1593319483262787594",
+						"title": "Let the unvaulting continue... 👀🏆",
+						"date": "2022-11-17",
+						"datetime": "2022-11-17T19:05:41.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -132,6 +267,11 @@
 			"angel & devil",
 			"sun & moon"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/new-legendary-skins-celebrate-fleta-s-mvp-award-shock-s-championship",
+			"title": "New Legendary Skins Celebrate Fleta’s MVP Award, Shock’s Championship",
+			"date": "2021-03-23"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -139,7 +279,14 @@
 					"end": "2021-04-06"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/new-legendary-skins-celebrate-fleta-s-mvp-award-shock-s-championship",
+						"title": "New Legendary Skins Celebrate Fleta’s MVP Award, Shock’s Championship",
+						"date": "2021-03-23"
+					}
+				]
 			},
 			{
 				"period": {
@@ -147,7 +294,21 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1600209764910174209",
+						"title": "Some pretty cool Overwatch League skins are back in the shop 👀",
+						"date": "2022-12-06",
+						"datetime": "2022-12-06T19:25:13.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1610381251357155331",
+						"title": "New year, new vault skins dropping 1/5 👀⭐",
+						"date": "2023-01-03",
+						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -160,6 +321,11 @@
 			"Pacific islands",
 			"fire"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/22017607",
+			"title": "All-Star Weekend: Custom Games and Legendary Skins",
+			"date": "2018-08-10"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -167,14 +333,44 @@
 					"end": "2018-08-27"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/22017607",
+						"title": "All-Star Weekend: Custom Games and Legendary Skins",
+						"date": "2018-08-10"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -186,6 +382,11 @@
 		"themes": [
 			"Japanese summer festivals"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/happi-genji-brings-festival-flair-to-the-summer-showdown-tournament",
+			"title": "Happi Genji Brings Festival Flair to the Summer Showdown Tournament",
+			"date": "2022-09-06"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -194,7 +395,14 @@
 					"endNote": "Originally stated to be 2022-11-15"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/happi-genji-brings-festival-flair-to-the-summer-showdown-tournament",
+						"title": "Happi Genji Brings Festival Flair to the Summer Showdown Tournament",
+						"date": "2022-09-06"
+					}
+				]
 			},
 			{
 				"period": {
@@ -203,7 +411,27 @@
 					"endNote": "Originally stated to be 2022-11-15"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577364930914705408",
+						"title": "Check out the Cosmetics webpage to see what else is dropping today 🦁💜🐯💛",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T18:28:00.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	},
@@ -216,6 +444,11 @@
 			"Japanese summer festivals",
 			"Dallas Fuel"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/happi-genji-brings-festival-flair-to-the-summer-showdown-tournament",
+			"title": "Happi Genji Brings Festival Flair to the Summer Showdown Tournament",
+			"date": "2022-09-06"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -223,7 +456,15 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1596579898956845056",
+						"title": "Make a splash in comp with the @ShanghaiDragons and @DallasFuel Summer skins! 🌊",
+						"date": "2022-11-26",
+						"datetime": "2022-11-26T19:01:25.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -236,6 +477,11 @@
 			"Japanese summer festivals",
 			"Shangai Dragons"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/happi-genji-brings-festival-flair-to-the-summer-showdown-tournament",
+			"title": "Happi Genji Brings Festival Flair to the Summer Showdown Tournament",
+			"date": "2022-09-06"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -243,7 +489,15 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1596579898956845056",
+						"title": "Make a splash in comp with the @ShanghaiDragons and @DallasFuel Summer skins! 🌊",
+						"date": "2022-11-26",
+						"datetime": "2022-11-26T19:01:25.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -256,6 +510,11 @@
 			"Sun",
 			"day"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/22975462",
+			"title": "Hey Now, You’re an All-Star",
+			"date": "2019-05-02"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -263,14 +522,44 @@
 					"end": "2019-05-22"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/22975462",
+						"title": "Hey Now, You’re an All-Star",
+						"date": "2019-05-02"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -283,6 +572,11 @@
 			"Mixed martial arts",
 			"boxing"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/mm-mei-legendary-skin-commemorates-may-melee-tournament",
+			"title": "MM-Mei Legendary Skin Commemorates May Melee Tournament",
+			"date": "2021-04-28"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -290,7 +584,14 @@
 					"end": "2021-05-11"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/mm-mei-legendary-skin-commemorates-may-melee-tournament",
+						"title": "MM-Mei Legendary Skin Commemorates May Melee Tournament",
+						"date": "2021-04-28"
+					}
+				]
 			}
 		]
 	},
@@ -303,6 +604,11 @@
 			"Moon",
 			"night"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/22975462",
+			"title": "Hey Now, You’re an All-Star",
+			"date": "2019-05-02"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -310,14 +616,44 @@
 					"end": "2019-05-22"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/22975462",
+						"title": "Hey Now, You’re an All-Star",
+						"date": "2019-05-02"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -330,6 +666,11 @@
 			"2021's June Joust",
 			"medieval knight jousting"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/royal-knight-mercy-skin-brings-medieval-flair-to-the-midseason-madness",
+			"title": "Royal Knight Mercy Skin Brings Medieval Flair to the Midseason Madness",
+			"date": "2022-07-19"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -337,7 +678,14 @@
 					"end": "2022-08-19"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/royal-knight-mercy-skin-brings-medieval-flair-to-the-midseason-madness",
+						"title": "Royal Knight Mercy Skin Brings Medieval Flair to the Midseason Madness",
+						"date": "2022-07-19"
+					}
+				]
 			},
 			{
 				"period": {
@@ -345,7 +693,27 @@
 					"end": "2022-11-16"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577364930914705408",
+						"title": "Check out the Cosmetics webpage to see what else is dropping today 🦁💜🐯💛",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T18:28:00.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	},
@@ -359,6 +727,11 @@
 			"medieval knight jousting",
 			"Los Angeles Gladiators"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/royal-knight-mercy-skin-brings-medieval-flair-to-the-midseason-madness",
+			"title": "Royal Knight Mercy Skin Brings Medieval Flair to the Midseason Madness",
+			"date": "2022-07-19"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -366,7 +739,15 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1593319483262787594",
+						"title": "Let the unvaulting continue... 👀🏆",
+						"date": "2022-11-17",
+						"datetime": "2022-11-17T19:05:41.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -380,6 +761,11 @@
 			"Mexican Wrestling",
 			"Day of the Dead"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/luchador-reaper-takes-the-ring-for-kickoff-clash",
+			"title": "Luchador Reaper Takes the Ring for Kickoff Clash",
+			"date": "2022-05-17"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -387,7 +773,14 @@
 					"end": "2022-06-25"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/luchador-reaper-takes-the-ring-for-kickoff-clash",
+						"title": "Luchador Reaper Takes the Ring for Kickoff Clash",
+						"date": "2022-05-17"
+					}
+				]
 			},
 			{
 				"period": {
@@ -395,7 +788,27 @@
 					"end": "2022-11-16"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577364930914705408",
+						"title": "Check out the Cosmetics webpage to see what else is dropping today 🦁💜🐯💛",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T18:28:00.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	},
@@ -410,22 +823,39 @@
 			"Day of the Dead",
 			"Los Angeles Gladiators"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/luchador-reaper-takes-the-ring-for-kickoff-clash",
+			"title": "Luchador Reaper Takes the Ring for Kickoff Clash",
+			"date": "2022-05-17"
+		},
 		"availabilities": [
-			{
-				"period": {
-					"start": "2022-05-17",
-					"end": "2022-06-25"
-				},
-				"source": "Overwatch Store",
-				"cost": 200
-			},
 			{
 				"period": {
 					"start": "2022-10-04",
 					"end": "2022-11-16"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577364930914705408",
+						"title": "Check out the Cosmetics webpage to see what else is dropping today 🦁💜🐯💛",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T18:28:00.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	},
@@ -440,22 +870,39 @@
 			"Day of the Dead",
 			"Seoul Dynasty"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/luchador-reaper-takes-the-ring-for-kickoff-clash",
+			"title": "Luchador Reaper Takes the Ring for Kickoff Clash",
+			"date": "2022-05-17"
+		},
 		"availabilities": [
-			{
-				"period": {
-					"start": "2022-05-17",
-					"end": "2022-06-25"
-				},
-				"source": "Overwatch Store",
-				"cost": 200
-			},
 			{
 				"period": {
 					"start": "2022-10-04",
 					"end": "2022-11-16"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577364930914705408",
+						"title": "Check out the Cosmetics webpage to see what else is dropping today 🦁💜🐯💛",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T18:28:00.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	},
@@ -467,6 +914,11 @@
 		"themes": [
 			"Gaia"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/legendary-all-stars-skins-revealed-for-reinhardt-and-d-va",
+			"title": "Legendary All-Stars Skins Revealed for Reinhardt and D.Va",
+			"date": "2020-09-13"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -474,14 +926,44 @@
 					"end": "2020-10-12"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-all-stars-skins-revealed-for-reinhardt-and-d-va",
+						"title": "Legendary All-Stars Skins Revealed for Reinhardt and D.Va",
+						"date": "2020-09-13"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -497,6 +979,11 @@
 			"San Francisco's 1849 gold rush",
 			"King Midas of Phrygia's mythical golden touch"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/new-legendary-skins-celebrate-fleta-s-mvp-award-shock-s-championship",
+			"title": "New Legendary Skins Celebrate Fleta’s MVP Award, Shock’s Championship",
+			"date": "2021-03-23"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -504,7 +991,14 @@
 					"end": "2021-04-06"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/new-legendary-skins-celebrate-fleta-s-mvp-award-shock-s-championship",
+						"title": "New Legendary Skins Celebrate Fleta’s MVP Award, Shock’s Championship",
+						"date": "2021-03-23"
+					}
+				]
 			},
 			{
 				"period": {
@@ -512,7 +1006,21 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1600209764910174209",
+						"title": "Some pretty cool Overwatch League skins are back in the shop 👀",
+						"date": "2022-12-06",
+						"datetime": "2022-12-06T19:25:13.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1610381251357155331",
+						"title": "New year, new vault skins dropping 1/5 👀⭐",
+						"date": "2023-01-03",
+						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -526,6 +1034,11 @@
 			"Lip's Sombra",
 			"Chinese dragons"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/zhulong-sombra-skin-brings-shanghai-dragons-victory-to-life",
+			"title": "Zhulong Sombra Skin Brings Shanghai Dragons’ Victory to Life",
+			"date": "2022-03-15"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -533,7 +1046,14 @@
 					"end": "2022-03-28"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/zhulong-sombra-skin-brings-shanghai-dragons-victory-to-life",
+						"title": "Zhulong Sombra Skin Brings Shanghai Dragons’ Victory to Life",
+						"date": "2022-03-15"
+					}
+				]
 			},
 			{
 				"period": {
@@ -541,7 +1061,21 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1600209764910174209",
+						"title": "Some pretty cool Overwatch League skins are back in the shop 👀",
+						"date": "2022-12-06",
+						"datetime": "2022-12-06T19:25:13.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1610381251357155331",
+						"title": "New year, new vault skins dropping 1/5 👀⭐",
+						"date": "2023-01-03",
+						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -554,6 +1088,11 @@
 			"Atlantis",
 			"water"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/22017607",
+			"title": "All-Star Weekend: Custom Games and Legendary Skins",
+			"date": "2018-08-10"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -561,14 +1100,44 @@
 					"end": "2018-08-27"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/22017607",
+						"title": "All-Star Weekend: Custom Games and Legendary Skins",
+						"date": "2018-08-10"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-09-07",
+					"end": "2021-09-25"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/overwatch-league-all-stars-vault-open-for-limited-time-six-skins-available",
+						"title": "Overwatch League All-Stars Vault Open for Limited Time—Six Skins Available!",
+						"date": "2021-09-07"
+					}
+				]
 			},
 			{
 				"period": {
 					"start": "2023-01-05"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1611077277718089728",
+						"title": "Get ready to make some waves 🌊",
+						"date": "2023-01-05",
+						"datetime": "2023-01-05T19:08:50.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -581,6 +1150,11 @@
 			"2020's All-Stars - Widowmaker 1v1 tournament",
 			"Angel of Death"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/ange-de-la-mort-legendary-skin-commemorates-june-joust-tournament",
+			"title": "Ange de la Mort Legendary Skin Commemorates June Joust Tournament",
+			"date": "2021-06-09"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -588,7 +1162,14 @@
 					"end": "2021-06-21"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/ange-de-la-mort-legendary-skin-commemorates-june-joust-tournament",
+						"title": "Ange de la Mort Legendary Skin Commemorates June Joust Tournament",
+						"date": "2021-06-09"
+					}
+				]
 			}
 		]
 	},
@@ -602,6 +1183,11 @@
 			"Spitfire pilot",
 			"Spitfire Mark II \"Aces High\""
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/23089413",
+			"title": "Aces of the Sky",
+			"date": "2019-08-15"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -609,7 +1195,29 @@
 					"end": "2019-09-16"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/23089413",
+						"title": "Aces of the Sky",
+						"date": "2019-08-15"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-08-11",
+					"end": "2021-08-23"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-skins-from-the-vault-available-for-limited-time",
+						"title": "Legendary Skins from the Vault Available for Limited Time",
+						"date": "2021-08-11"
+					}
+				]
 			},
 			{
 				"period": {
@@ -617,7 +1225,15 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1593319483262787594",
+						"title": "Let the unvaulting continue... 👀🏆",
+						"date": "2022-11-17",
+						"datetime": "2022-11-17T19:05:41.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -631,6 +1247,12 @@
 			"Frank Sinatra",
 			"Aliens"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/23455709",
+			"archiveURL": "https://web.archive.org/web/20210224021836/https://overwatchleague.com/en-us/news/23455709",
+			"title": "The Making of the Alien Zarya MVP Skin",
+			"date": "2020-06-16"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -638,7 +1260,15 @@
 					"end": "2020-06-30"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/23455709",
+						"archiveURL": "https://web.archive.org/web/20210224021836/https://overwatchleague.com/en-us/news/23455709",
+						"title": "The Making of the Alien Zarya MVP Skin",
+						"date": "2020-06-16"
+					}
+				]
 			}
 		]
 	},
@@ -651,6 +1281,11 @@
 			"Jjonak's Zenyatta",
 			"jjomullak nakji (fumbling octopus)"
 		],
+		"article": {
+			"url": "https://overwatchleague.com/en-us/news/23035278",
+			"title": "Skin for a King",
+			"date": "2019-06-22"
+		},
 		"availabilities": [
 			{
 				"period": {
@@ -658,7 +1293,29 @@
 					"end": "2019-07-14"
 				},
 				"source": "Overwatch Store",
-				"cost": 200
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/23035278",
+						"title": "Skin for a King",
+						"date": "2019-06-22"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2021-08-11",
+					"end": "2021-08-23"
+				},
+				"source": "Overwatch Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/news/legendary-skins-from-the-vault-available-for-limited-time",
+						"title": "Legendary Skins from the Vault Available for Limited Time",
+						"date": "2021-08-11"
+					}
+				]
 			},
 			{
 				"period": {
@@ -666,7 +1323,21 @@
 					"end": "2023-01-04"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1600209764910174209",
+						"title": "Some pretty cool Overwatch League skins are back in the shop 👀",
+						"date": "2022-12-06",
+						"datetime": "2022-12-06T19:25:13.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1610381251357155331",
+						"title": "New year, new vault skins dropping 1/5 👀⭐",
+						"date": "2023-01-03",
+						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -685,7 +1356,27 @@
 					"end": "2022-11-16"
 				},
 				"source": "Overwatch 2 Store",
-				"cost": 300
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1577340456354078720",
+						"title": "Be one with the universe 🌌",
+						"date": "2022-10-04",
+						"datetime": "2022-10-04T16:50:45.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1591121076024655872",
+						"title": "You haven't snagged the 2022 Overwatch League season skins yet? 😴",
+						"date": "2022-11-11",
+						"datetime": "2022-11-11T17:30:00.000Z"
+					},
+					{
+						"url": "https://us.forums.blizzard.com/en/overwatch/t/regarding-our-mid-season-cycle-patch/748128",
+						"title": "Regarding Our Mid-Season Cycle Patch",
+						"date": "2022-11-15",
+						"datetime": "2022-11-15T18:30:11.916Z"
+					}
+				]
 			}
 		]
 	}

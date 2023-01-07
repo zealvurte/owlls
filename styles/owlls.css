@@ -233,12 +233,8 @@ html {
 	
 	--link-text-color: var(--accent-color);
 	--link-visited-text-color: var(--dark-accent-color);
-	--link-focused-text-color: var(--background-color);
-	--link-focused-background-color: var(--dark-accent-color);
-	--link-focused-outline-color: var(--dark-accent-color);
-	--link-active-text-color: var(--background-color);
-	--link-active-background-color: var(--accent-color);
-	--link-active-outline-color: var(--accent-color);
+	--link-focused-text-color: var(--accent-color);
+	--link-active-text-color: var(--text-color);
 	
 	--input-text-color: var(--disabled-text-color);
 	--input-background-color: var(--background-color);
@@ -434,33 +430,34 @@ ul > li > p:before {
 details:not([open]) > *:not(summary) {
 	display: none;
 }
-a[href],
-button {
-	border-color: transparent;
+a[href] {
+	border: none;
+	
 	line-height: inherit;
 	vertical-align: inherit;
 	text-decoration: none;
-	color: var(--accent-color);
+	
+	color: var(--link-text-color);
 	background-color: transparent;
 	outline: none;
+	
 	cursor: pointer;
 }
-a[href]:not(:disabled):link {
-	color: var(--link-text-color);
-}
-
 a[href]:not(:disabled):visited {
-	color: var(--link-visisted-text-color);
+	color: var(--link-visited-text-color);
+}
+a[href]:is(:focus,:focus-visisble) {
+	outline: none;
 }
 a[href]:not(:disabled):is(:hover,:focus) {
+	text-decoration: underline;
+	
 	color: var(--link-focused-text-color);
-	background-color: var(--link-focused-background-color);
-	outline: 1px solid var(--link-focused-outline-color);
 }
 a[href]:not(:disabled):is(:active,:focus:hover) {
+	text-decoration: underline;
+	
 	color: var(--link-active-text-color);
-	background-color: var(--link-active-background-color);
-	outline: 1px solid var(--link-active-outline-color);
 }
 img,
 video {
@@ -706,21 +703,26 @@ label {
 button {
 	position: relative;
 	appearance: none;
+	min-width: calc(var(--line-space) + var(--margin-thin) * 2);	/* 1.875rem : 30px */
+	height: calc(var(--line-space) + var(--margin-thin) * 2);	/* 1.875rem : 30px */
 	margin: 0;
+	padding: var(--margin-thin);
 	border: none;
+	border-radius: var(--border-radius-thin);
 	box-sizing: border-box;
+	
+	line-height: inherit;
+	vertical-align: inherit;
+	text-decoration: none;
 	
 	font: normal normal 700 var(--font-size)/var(--line-height) Rajdhani,RajdhaniFallback,Impact,sans-serif;
 	text-transform: uppercase;
-}
-button {
-	min-width: calc(var(--line-space) + var(--margin-thin) * 2);	/* 1.875rem : 30px */
-	height: calc(var(--line-space) + var(--margin-thin) * 2);	/* 1.875rem : 30px */
-	padding: var(--margin-thin);
-	border-radius: var(--border-radius-thin);
 	
 	color: var(--input-label-text-color);
 	background-color: var(--input-label-background-color);
+	outline: none;
+	
+	cursor: pointer;
 }
 button.icon {
 	width: calc(var(--line-space) + var(--margin-thin) * 2);	/* 1.875rem : 30px */
@@ -817,7 +819,6 @@ del,
 	padding: 0;
 	border: none;
 	outline: none;
-	color: inherit;
 	background: none;
 	font-family: inherit;
 	font-size: inherit;
@@ -969,6 +970,9 @@ q ins::after {
 [data-action] {
 	cursor: pointer;
 }
+body > div.tooltip {
+	display: none;
+}
 div.tooltip {
 	position: absolute;
 	left: 0;
@@ -1004,7 +1008,7 @@ span.hyphen-nobreak {
 	color: var(--accent-color);
 }
 #owlls img.owl-token {
-	width: calc(1em / var(--line-height) - 2px);	/* -1px on the top and bottom, because line-box alignments are stupid */
+	width: calc(1em / (var(--line-height) + 0.125));	/* ~0.125 because line-box alignments for baseline and ascenders are stupid */
 }
 #owlls #intro {
 	--heading-height: calc(var(--h1-font-size) * var(--header-line-height) + var(--margin) * 2);
@@ -1320,7 +1324,7 @@ span.hyphen-nobreak {
 	opacity: 0.5
 }
 #owlls article.skin > div.wrapper > footer > p > img.owl-token {
-	width: calc(1em * var(--header-line-height) - 2px);	/* -1px on the top and bottom, because line-box alignments are stupid */
+	width: calc(1em * (var(--header-line-height) - 0.125));	/* ~0.125 because line-box alignments for baseline and ascenders are stupid */
 }
 #owlls section.skin-info {
 	position: absolute;
@@ -1382,11 +1386,15 @@ span.hyphen-nobreak {
 #owlls section.skin-info > header > p > button::before {
 	inset: var(--margin-thin);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > p.dl-title {
-	position: sticky;
-	top: calc(-1px - var(--margin));
+#owlls section.skin-info > div.wrapper > main > div.group > * {
 	padding: var(--padding-thin);
 	margin-bottom: 0;
+	
+	background-color: var(--background-color);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > :first-child {
+	position: sticky;
+	top: calc(-1px - var(--margin));
 	
 	font-weight: bold;
 	text-align: center;
@@ -1394,7 +1402,7 @@ span.hyphen-nobreak {
 	background-image: linear-gradient(90deg,var(--background-color),var(--light-background-color),var(--background-color));
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
-#owlls section.skin-info > div.wrapper > main > div.group:first-child > p.dl-title {
+#owlls section.skin-info > div.wrapper > main > div.group:first-child > :first-child {
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
 }
@@ -1402,12 +1410,9 @@ span.hyphen-nobreak {
 	display: grid;
 	grid-template-columns: minmax(min-content,1fr) minmax(auto,2fr);
 	grid-auto-rows: minmax(calc(var(--line-space) + var(--padding-vertical-thin) * 2));
-	margin-bottom: 0;
-	padding-left: 0;
+	padding: 0;
 	
 	text-align: left;
-	
-	background-color: var(--background-color);
 }
 #owlls section.skin-info > div.wrapper > main > div.group:last-child > dl {
 	border-bottom-left-radius: var(--border-radius);
@@ -1429,4 +1434,36 @@ span.hyphen-nobreak {
 }
 #owlls section.skin-info > div.wrapper > main > div.group > dl > .historic {
 	color: var(--disabled-text-color);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a[href].reference {
+	
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a[href].reference::before {
+	content: '';
+	display: inline-block;
+	width: calc(var(--line-space) * 0.75);
+	height: calc(var(--line-space) * 0.75);
+	
+	vertical-align: text-bottom;
+	
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference.archived::before {
+	filter: sepia(1);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://playoverwatch.com"],[href^="https://overwatch.blizzard.com"],[data-archived-url^="https://playoverwatch.com"],[data-archived-url^="https://overwatch.blizzard.com"])::before {
+	background-image: url(../images/ow-favicon-31x31.webp);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://us.forums.blizzard.com/en/overwatch"],[data-archived-url^="https://us.forums.blizzard.com/en/overwatch"])::before {
+	background-image: url(../images/ow-forums-favicon-32x32.webp);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://overwatchleague.com"],[data-archived-url^="https://overwatchleague.com"])::before {
+	background-image: url(../images/owl-favicon-32x32.webp);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://blizzard.com"],[data-archived-url^="https://blizzard.com"])::before {
+	background-image: url(../images/blizzard-favicon-32x32.webp);
+}
+#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://twitter.com"],[data-archived-url^="https://twitter.com"])::before {
+	background-image: url(../images/twitter-favicon-32x32.webp);
 }
