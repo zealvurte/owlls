@@ -29,7 +29,7 @@ All images mentioned in this section are © Blizzard Entertainment, Inc.
 
 Skin images were taken from [the Overwatch League website](https://overwatchleague.com) where available. Any that were not are derivatives created by editing official artwork of the skins until such time as an official skin image became available.
 
-The below images were taken from Blizzard owned websites as-is or derivatives created by converting or editing an image from them.
+The below images were taken from Blizzard owned websites as-is, or derivatives created by converting or editing an image from them.
 * [blizzard-favicon-32x32.webp](/images/blizzard-favicon-32x32.webp)
 * [ow-favicon-31x31.webp](/images/ow-favicon-31x31.webp)
 * [ow-forums-favicon-32x32.webp](/images/ow-forums-favicon-32x32.webp)
