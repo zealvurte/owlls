@@ -211,7 +211,9 @@ html {
 	--column-width: calc(var(--line-length-max) + (var(--margin-thick) * 2));	/* 43.5rem : 696px */
 	
 	--ow-legendary-color: #ff9c00;
+	--ow-legendary-color-rgb: 255,156,0;
 	--owl-league-color: #f79e18;
+	--owl-league-color-rgb: 247,158,24;
 	
 	--text-color: #EEE;
 	--text-color-rgb: 238,238,238;
@@ -227,8 +229,8 @@ html {
 	--light-background-color-rgb: 51,51,51;
 	--dark-background-color: #111;
 	--dark-background-color-rgb: 17,17,17;
-	--accent-color: #f79e18;
-	--accent-color-rgb: 247,158,24;
+	--accent-color: var(--owl-league-color);
+	--accent-color-rgb: var(--owl-league-color-rgb);
 	--hard-light-accent-color: #f79012;	/* Hard-light blend with rgb(123,140,168) */
 	--hard-light-accent-color-rgb: 247,147,18;	/* Hard-light blend with rgb(123,140,168) */
 	--dark-accent-color: #c67a00;
@@ -1024,19 +1026,28 @@ span.hyphen-nobreak {
 	overflow-y: visible;
 }
 #owlls #heading {
+	display: grid;
 	height: var(--heading-height);
 	margin: 0;
-	--dynamic-line-height-diff: calc((var(--h1-font-size) - 1em) * var(--header-line-height));
-	--max-line-height-diff: calc((var(--h1-font-size) - var(--h6-font-size)) * var(--header-line-height));
-	padding: clamp(var(--margin),calc(var(--margin) + var(--dynamic-line-height-diff) / 2),calc(var(--margin) + var(--max-line-height-diff) / 2)) var(--margin);
+	padding: 0 var(--margin);
 	box-sizing: border-box;
+	grid-template-columns: auto auto;
+	gap: var(--margin);
+	justify-content: center;
+}
+#owlls #logo {
+	height: calc(1em * (var(--header-line-height) - 0.125));	/* ~0.125 because line-box alignments for baseline and ascenders are stupid */
+}
+#owlls #heading-text {
+	margin: auto;
 	
 	font-size: clamp(var(--h6-font-size),5vw,var(--h1-font-size));
 }
-@media (max-width: 355px) {	/* 22.1875rem - wrapped to 2 lines */
-	#owlls #heading {
-		--max-line-height-diff: calc((var(--h1-font-size) - var(--h6-font-size) * 2) * var(--header-line-height));
-		padding: calc(var(--margin) + var(--max-line-height-diff) / 2) var(--margin);
+@media (max-width: 459px) {	/* Breakpoint for 2 lines */
+	#owlls #heading-text {
+		width: 8.5em;
+		
+		text-align: left;
 	}
 }
 #owlls #nav {
