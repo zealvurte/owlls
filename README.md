@@ -1,4 +1,4 @@
-# Overwatch League Lengendary Skins (OWLLS)
+# Overwatch League Legendary Skins (OWLLS)
 A GitHub Pages version of a website for browsing the Overwatch League legendary skins and their metadata.
 
 ## Motivation & Purpose
