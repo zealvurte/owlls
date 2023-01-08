@@ -17,7 +17,7 @@ If you spot any issues in the data, please raise an issue or pull request to fix
 
 Code optimisations & suggestions and bug fixes are welcome, though performance is not a priority for this project.
 
-If there's interest, I may add support for other languages (at least as many as [the Overwatch League website](https://overwatchleague.com) supports) in the future.
+If there's interest, I may add support for other languages (at least as many as [the Overwatch League's website](https://overwatchleague.com) supports) in the future.
 
 ## Licence, Copyright & Trademarks
 All code, data, and original images not covered by the below sections are licensed under GPLv3.
@@ -27,14 +27,15 @@ Overwatch and Overwatch League are trademarks owned by Blizzard Entertainment, I
 ### Blizzard Images
 All images mentioned in this section are © Blizzard Entertainment, Inc.
 
-Skin images were taken from [the Overwatch League website](https://overwatchleague.com) where available. Any that were not are derivatives created by editing official artwork of the skins until such time as an official skin image became available.
+Skin images were taken from [the Overwatch League's website](https://overwatchleague.com) where available. Any that were not available are derivatives created by editing official artwork of the skins until such time as an official skin image became available. All skin images were then converted to WebP format.
 
-The following images were taken from Blizzard owned websites as-is, or derivatives created by converting or editing an image from them:
-* [blizzard-favicon-32x32.webp](/images/blizzard-favicon-32x32.webp)
-* [ow-favicon-31x31.webp](/images/ow-favicon-31x31.webp)
-* [ow-forums-favicon-32x32.webp](/images/ow-forums-favicon-32x32.webp)
-* [owl-favicon-32x32.webp](/images/owl-favicon-32x32.webp)
-* [owl-token.svg](/images/owl-token.svg)
+[owl-token.svg](/images/owl-token.svg) was also taken from [the Overwatch League's website](https://overwatchleague.com), but edited to remove unnecessary attributes and/or values.
+
+The following images were taken from the indicated Blizzard owned website and converted to WebP:
+* [blizzard-favicon-32x32.webp](/images/blizzard-favicon-32x32.webp) from [Blizzard's website](https://blizzard.com)
+* [ow-favicon-31x31.webp](/images/ow-favicon-31x31.webp) from [Overwatch's website](https://overwatch.blizzard.com)
+* [ow-forums-favicon-32x32.webp](/images/ow-forums-favicon-32x32.webp) from [Overwatch's forums](https://us.forums.blizzard.com/en/overwatch/)
+* [owl-favicon-32x32.webp](/images/owl-favicon-32x32.webp) from [the Overwatch League's website](https://overwatchleague.com)
 
 ### Twitter Images
-[twitter-favicon-32x32.webp](/images/twitter-favicon-32x32.webp) is a derivative created by converting an image taken from Twitter's website. It is therefore © Twitter, Inc.
+[twitter-favicon-32x32.webp](/images/twitter-favicon-32x32.webp) was taken from [Twitter](https://twitter.com) and converted to WebP. It is therefore © Twitter, Inc.
