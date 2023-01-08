@@ -210,6 +210,9 @@ html {
 	--half-column-width: calc(var(--line-length-min) + (var(--margin-thick) * 2));	/* 23.5rem : 376px */
 	--column-width: calc(var(--line-length-max) + (var(--margin-thick) * 2));	/* 43.5rem : 696px */
 	
+	--ow-legendary-color: #ff9c00;
+	--owl-league-color: #f79e18;
+	
 	--text-color: #EEE;
 	--text-color-rgb: 238,238,238;
 	--faded-text-color: #CCC;
@@ -1004,8 +1007,11 @@ span.hyphen-nobreak {
 #owlls {
 	overflow-y: scroll;
 }
+#owlls span.ow-legendary {
+	color: var(--ow-legendary-color);
+}
 #owlls span.owl-league {
-	color: var(--accent-color);
+	color: var(--owl-league-color);
 }
 #owlls img.owl-token {
 	width: calc(1em / (var(--line-height) + 0.125));	/* ~0.125 because line-box alignments for baseline and ascenders are stupid */
