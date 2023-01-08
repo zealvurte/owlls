@@ -1,5 +1,5 @@
 # Overwatch League Lengendary Skins (OWLLS)
-A GitHub Pages version of a website for browsing the Overwatch League legendary skins.
+A GitHub Pages version of a website for browsing the Overwatch League legendary skins and their metadata.
 
 ## Motivation & Purpose
 As Overwatch doesn't provide a way of viewing all available Overwatch League legendary skins while they're out of store rotation, and existing documentation of all these skins and their past availability is poor at best, I decided to research and document this information myself, and then provide a way to easily view it.
@@ -15,7 +15,7 @@ Data for each skin is in JSON and contains the name, hero, season and event they
 ## Contributing
 If you spot any issues in the data, please raise an issue or pull request to fix it, along with any supporting links if it's new/contradictory info.
 
-Code optimisations & suggestions and bug fixes are welcome, though performance is not a priority with this project (I don't even use this version myself).
+Code optimisations & suggestions and bug fixes are welcome, though performance is not a priority for this project.
 
 If there's interest, I may add support for other languages (at least as many as [the Overwatch League website](https://overwatchleague.com) supports) in the future.
 
