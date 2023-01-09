@@ -795,10 +795,6 @@ button.icon.icon-close::before {
 	-webkit-mask: url(../images/icons.svg#input-clear);
 	mask: url(../images/icons.svg#input-clear);
 }
-button.icon > span.label.hide-label {
-	position: absolute;
-	visibility: hidden;
-}
 span,
 i,
 dfn,
@@ -927,7 +923,8 @@ sub.reveal {
 abbr:is(.initial,.acronym,.initial.acronym) {
 	text-transform: uppercase;
 }
-:is(abbr,span)[title] {
+abbr[title],
+[data-tooltip] {
 	position: relative;
 	
 	text-decoration: underline currentcolor dotted;
@@ -975,10 +972,7 @@ q ins::after {
 [data-action] {
 	cursor: pointer;
 }
-body > div.tooltip {
-	display: none;
-}
-div.tooltip {
+[role="tooltip"] {
 	position: absolute;
 	left: 0;
 	padding: var(--padding-thin);
@@ -991,20 +985,45 @@ div.tooltip {
 	color: var(--dark-background-color);
 	background-color: var(--faded-text-color);
 	box-shadow: 0 var(--border-thinnest) var(--border-thin) rgba(0,0,0,0.5);
+	
+	transition: visibility 0s linear 0s;
+	animation: var(--transition-short-duration) ease-in both tooltip-in;
+	
+	pointer-events: none;
+}
+@keyframes tooltip-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes tooltip-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+[role="tooltip"][data-hidden] {
 	opacity: 0;
 	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), transform 0s linear var(--transition-short-duration);
+	transition: visibility 0s linear var(--transition-short-duration);
+	animation: var(--transition-short-duration) ease-out both tooltip-out;
 }
-div.tooltip[data-state="active"] {
-	opacity: 1;
-	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), transform 0s linear 0s;
-}
-div.tooltip > p:last-child {
+[role="tooltip"] > p:last-child {
 	margin-bottom: 0;
 }
 span.hyphen-nobreak {
 	white-space: nowrap;
+}
+[data-hidden] {
+	visibility: hidden !important;
+}
+[hidden] {
+	display: none !important;
 }
 #owlls {
 	overflow-y: scroll;
@@ -1100,13 +1119,42 @@ span.hyphen-nobreak {
 	margin: auto;
 	align-self: center;
 	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), visibility 0s linear 0s;
+	transition: visibility 0s linear 0s;
+	animation: var(--transition-short-duration) ease-in both no-skins-in;
 }
-#owlls #no-skins[data-state="inert"] {
-	opacity: 0;
-	visibility: hidden;
+@keyframes no-skins-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes no-skins-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#owlls #no-skins[data-hidden] {
+	transition: visibility 0s linear var(--transition-short-duration);
+	animation: var(--transition-short-duration) ease-out both no-skins-out;
+}
+#owlls article.skin {
+	position: relative;
+	width: min(calc(100vw - var(--margin-thick) * 2),var(--half-column-width));
+	height: min(calc(100vw - var(--margin-thick) * 2),var(--half-column-width));
+	margin: 0;
+	flex-shrink: 0;
+	border-radius: var(--border-radius);
 	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), visibility 0s linear var(--transition-short-duration);
+	background-color: var(--light-background-color);
+	box-shadow: 0 var(--border-thinnest) var(--border-thin) rgb(0 0 0 / 0.5);
+	
+	transition: box-shadow var(--transition-medium-duration) var(--transition-easing), visibility 0s linear 0s;
+	animation: var(--transition-very-short-duration) ease-in both skin-in;
 }
 @keyframes skin-in {
 	0% {
@@ -1128,27 +1176,14 @@ span.hyphen-nobreak {
 		transform: scale(0.9,0.9);
 	}
 }
-#owlls article.skin {
-	position: relative;
-	width: min(calc(100vw - var(--margin-thick) * 2),var(--half-column-width));
-	height: min(calc(100vw - var(--margin-thick) * 2),var(--half-column-width));
-	margin: 0;
-	flex-shrink: 0;
-	border-radius: var(--border-radius);
-	
-	background-color: var(--light-background-color);
-	box-shadow: 0 var(--border-thinnest) var(--border-thin) rgb(0 0 0 / 0.5);
-	
-	transition: box-shadow var(--transition-medium-duration) var(--transition-easing);
-	animation: var(--transition-very-short-duration) ease-in both skin-in;
-}
-#owlls article.skin[data-state="inert"] {
+#owlls article.skin[data-hidden] {
+	transition: box-shadow var(--transition-medium-duration) var(--transition-easing), visibility 0s linear var(--transition-short-duration);
 	animation: var(--transition-short-duration) ease-out both skin-out;
 }
-#owlls article.skin[data-state="inert"][hidden] {
-	display: none;
-}
 #owlls article.skin:hover {
+	box-shadow: 0 var(--border-thin) var(--border) rgb(0 0 0 / 0.5);
+}
+#owlls article.skin:has(> div.wrapper > main > p > button:focus) {
 	box-shadow: 0 var(--border-thin) var(--border) rgb(0 0 0 / 0.5);
 }
 #owlls article.skin::before {
@@ -1170,10 +1205,16 @@ span.hyphen-nobreak {
 	
 	pointer-events: none;
 }
-#owlls article.skin[data-expanded]:is(*,:hover)::before {
+#owlls article.skin[aria-expanded="true"]:is(*,:hover)::before {
+	opacity: 0;
+}
+#owlls article.skin[aria-expanded="true"]:has(> div.wrapper > main > p > button:focus)::before {
 	opacity: 0;
 }
 #owlls article.skin:hover::before {
+	opacity: 1;
+}
+#owlls article.skin:has(> div.wrapper > main > p > button:focus)::before {
 	opacity: 1;
 }
 #owlls article.skin > header {
@@ -1196,10 +1237,16 @@ span.hyphen-nobreak {
 	
 	transition: opacity var(--transition-short-duration) var(--transition-easing) var(--transition-short-duration), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;	/* When discrete animation properties become transitionable, add delay for background-color and mix-blend-mode */
 }
-#owlls article.skin[data-expanded] > header {
+#owlls article.skin[aria-expanded="true"] > header {
 	opacity: 0;
 }
 #owlls article.skin:hover > header {
+	background-color: var(--accent-color);
+	mix-blend-mode: normal;
+	
+	transition: opacity var(--transition-short-duration) var(--transition-easing), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;
+}
+#owlls article.skin:has(> div.wrapper > main > p > button:focus) > header {
 	background-color: var(--accent-color);
 	mix-blend-mode: normal;
 	
@@ -1269,19 +1316,43 @@ span.hyphen-nobreak {
 	
 	pointer-events: none;
 }
-#owlls article.skin[data-expanded]:is(*,:hover) > div.wrapper > main > p::before {
-	transform: scale(2.5);
-	opacity: 1;
-	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), transform var(--transition-short-duration) var(--transition-easing);
-}
 #owlls article.skin:hover > div.wrapper > main > p::before {
 	transform: scale(1);
 	opacity: 1;
 	
 	transition: opacity var(--transition-medium-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing);
 }
-#owlls article.skin > div.wrapper > main > p > img {
+#owlls article.skin > div.wrapper > main > p:has(> button:focus)::before {
+	transform: scale(1);
+	opacity: 1;
+	
+	transition: opacity var(--transition-medium-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing);
+}
+@keyframes skin-expanded-info-icon-out {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(4);
+	}
+}
+#owlls article.skin[aria-expanded="true"]:is(*,:hover) > div.wrapper > main > p::before {
+	animation: var(--transition-short-duration) ease-out both skin-expanded-info-icon-out;
+}
+#owlls article.skin[aria-expanded="true"] > div.wrapper > main > p:has(> button:focus)::before {
+	animation: var(--transition-short-duration) ease-out both skin-expanded-info-icon-out;
+}
+#owlls article.skin > div.wrapper > main > p > button {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	
+	background-color: transparent;
+}
+#owlls article.skin > div.wrapper > main > p > button > img {
 	display: block;
 	width: var(--half-column-width);
 	max-width: none;
@@ -1293,15 +1364,20 @@ span.hyphen-nobreak {
 	
 	transform: scale(1.001);
 	
-	transition: transform var(--transition-medium-duration) var(--transition-easing), filter var(--transition-medium-duration) var(--transition-easing);
+	transition: transform var(--transition-medium-duration) ease-in, filter var(--transition-medium-duration) ease-in;
 }
-#owlls article.skin:hover > div.wrapper > main > p > img {
+#owlls article.skin:hover > div.wrapper > main > p > button > img,
+#owlls article.skin > div.wrapper > main > p > button:focus > img {
 	transform: scale(1.05);
 	filter: saturate(0) contrast(0) brightness(0.4);
+	
+	transition: transform var(--transition-medium-duration) ease-out, filter var(--transition-medium-duration) ease-out;
 }
-#owlls article.skin[data-expanded] > div.wrapper > main > p > img {
+#owlls article.skin[aria-expanded="true"] > div.wrapper > main > p > button > img {
 	transform: scale(10);
 	filter: saturate(0) contrast(0) brightness(0.4);
+	
+	transition: transform var(--transition-medium-duration) ease-out, filter var(--transition-medium-duration) ease-out;
 }
 #owlls article.skin > div.wrapper > footer {
 	position: absolute;
@@ -1321,10 +1397,16 @@ span.hyphen-nobreak {
 	
 	transition: opacity var(--transition-short-duration) var(--transition-easing) var(--transition-short-duration), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;	/* When discrete animation properties become transitionable, add delay for background-color and mix-blend-mode */
 }
-#owlls article.skin[data-expanded] > div.wrapper > footer {
+#owlls article.skin[aria-expanded="true"] > div.wrapper > footer {
 	opacity: 0;
 }
 #owlls article.skin:hover > div.wrapper > footer {
+	background-color: var(--faded-text-color);
+	mix-blend-mode: normal;
+	
+	transition: opacity var(--transition-short-duration) var(--transition-easing), background-color 0s linear 0s, mix-blend-mode 0s linear 0s;
+}
+#owlls article.skin > div.wrapper:has(> main > p > button:focus) > footer {
 	background-color: var(--faded-text-color);
 	mix-blend-mode: normal;
 	
@@ -1355,30 +1437,60 @@ span.hyphen-nobreak {
 	overflow-y: auto;
 	
 	background-color: var(--light-background-color);
-	transform: scale(0.21);
-	opacity: 0;
 	
-	transition: opacity var(--transition-short-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing), visibility 0s linear var(--transition-medium-duration);
-	
-	visibility: hidden;
+	transition: visibility 0s linear 0s;
+	animation: var(--transition-medium-duration) ease-out both skin-info-in;
 }
-#owlls section.skin-info[data-state="active"] {
-	transform: scale(1);
-	opacity: 1;
-	
-	transition: opacity var(--transition-medium-duration) var(--transition-easing), transform var(--transition-medium-duration) var(--transition-easing);
-	
-	visibility: visible;
+@keyframes skin-info-in {
+	0% {
+		opacity: 0;
+		transform: scale(0.21);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+@keyframes skin-info-out {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+		transform: scale(0.21);
+	}
+}
+#owlls section.skin-info[data-hidden] {
+	transition: visibility 0s linear var(--transition-medium-duration);
+	animation: var(--transition-medium-duration) ease-in both skin-info-out;
 }
 #owlls section.skin-info > * {
-	opacity: 0;
-	
-	transition: opacity var(--transition-short-duration) var(--transition-easing);
+	transition: visibility 0s linear 0s;
+	animation: var(--transition-short-duration) ease-in var(--transition-short-duration) both skin-info-contents-in;
 }
-#owlls section.skin-info[data-state="active"] > * {
-	opacity: 1;
-	
-	transition: opacity var(--transition-short-duration) var(--transition-easing) var(--transition-short-duration);
+@keyframes skin-info-contents-in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes skin-info-contents-out {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+#owlls section.skin-info[data-hidden] > * {
+	transition: visibility 0s linear var(--transition-short-duration);
+	animation: var(--transition-short-duration) ease-out 0s both skin-info-contents-out;
 }
 #owlls section.skin-info > header {
 	position: relative;

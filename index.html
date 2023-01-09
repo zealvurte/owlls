@@ -8,18 +8,18 @@ slug: home
 	{%- assign skinImage = skinImage | replace: ":", "" | replace: ".", "" | replace: " ", "-" -%}
 	{%- assign skinID = skinImage | replace: "_", "-" | prepend: "skin-" -%}
 	{%- assign skinAvailabilities = skin.availabilities | reverse %}
-				<article id="{{ skinID }}" class="skin" data-name="{{ skin.name }}" data-hero="{{ skin.hero }}" data-season="{{ skin.season }}" data-availability-start="{{ skinAvailabilities.first.period.start }}" data-availability-end="{{ skinAvailabilities.first.period.end }}" data-source="{{ skinAvailabilities.first.source }}" data-cost="{{ skinAvailabilities.first.cost }}" data-state="inert" hidden>
+				<article id="{{ skinID }}" class="skin" data-name="{{ skin.name }}" data-hero="{{ skin.hero }}" data-season="{{ skin.season }}" data-availability-start="{{ skinAvailabilities.first.period.start }}" data-availability-end="{{ skinAvailabilities.first.period.end }}" data-source="{{ skinAvailabilities.first.source }}" data-cost="{{ skinAvailabilities.first.cost }}" data-hidden hidden>
 					<header>
 						<h2>{{ skin.name }}</h2>
 						<p>{{ skin.hero }} (<time>{{ skin.season }}</time>)</p>
 					</header>
 					<div class="wrapper">
 						<main>
-							<p data-action="expandable.expand;scrollTo.start;state.active" data-target="#{{ skinID }};#{{ skinID }}_info;#{{ skinID }}_info"><img src="images/{{ skinImage }}.webp" alt="" width="600" height="600" loading="lazy"/></p>
-							<section id="{{ skinID }}_info" class="skin-info" data-state="inert">
+							<p><button type="button" data-action="expandable.expand;visibility.show;scrollTo.start" data-target="#{{ skinID }};#{{ skinID }}_info;#{{ skinID }}_info" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Show information"><img src="images/{{ skinImage }}.webp" alt="" width="600" height="600" loading="lazy"/></button></p>
+							<section id="{{ skinID }}_info" class="skin-info" data-hidden hidden>
 								<header>
 									<h3>Information</h3>
-									<p><button type="button" class="icon icon-close" data-action="tooltip.hide;state.inert;expandable.collapse" data-target=";#{{ skinID }}_info;#{{ skinID }}"><span class="label hide-label">Close</span></button></p>
+									<p><button type="button" class="icon icon-close" data-action="visibility.hide;expandable.collapse" data-target="#{{ skinID }}_info;#{{ skinID }}" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Hide information"></button></p>
 								</header>
 								<div class="wrapper">
 									<main>
@@ -54,7 +54,7 @@ slug: home
 											<p>Availability</p>
 											<dl>
 	{%- for availability in skinAvailabilities %}
-												<dt class="double-row-header{% unless forloop.first %} historic{% endunless %}"><time class="start" datetime="{{ availability.period.start | default: "" }}"><span class="hyphen-nobreak{% if availability.period.startNote %} note" title="{{ availability.period.startNote}}" data-action="tooltip.toggle"{% endif %}">{{ availability.period.start | default: "unknown" }}</span></time> – <time class="end" datetime="{{ availability.period.end | default: "" }}"><span class="hyphen-nobreak{% if availability.period.endNote %} note" title="{{ availability.period.endNote}}" data-action="tooltip.toggle"{% endif %}">{{ availability.period.end | default: "unknown" }}</span></time></dt>
+												<dt class="double-row-header{% unless forloop.first %} historic{% endunless %}"><time class="start" datetime="{{ availability.period.start | default: "" }}"><span class="hyphen-nobreak{% if availability.period.startNote %} note" data-tooltip="{{ availability.period.startNote}}" tabindex="0"{% endif %}">{{ availability.period.start | default: "unknown" }}</span></time> – <time class="end" datetime="{{ availability.period.end | default: "" }}"><span class="hyphen-nobreak{% if availability.period.endNote %} note" data-tooltip="{{ availability.period.endNote}}" tabindex="0"{% endif %}">{{ availability.period.end | default: "unknown" }}</span></time></dt>
 												<dd{% unless forloop.first %} class="historic"{% endunless %}>{{ availability.source }}, {{ availability.cost }} <img class="owl-token" title="OWL Token" src="images/owl-token.svg" alt="OWL Tokens" width="220" height="220" loading="lazy"/><br/><small class="references">References: {% for reference in availability.references %}<a href="{% if reference.archiveURL %}{{ reference.archiveURL }}{% else %}{{ reference.url }}{% endif %}" target="_blank" rel="external noopener" class="reference{% if reference.archiveURL %} archived" data-archived-url="{{ reference.url }}{% endif %}"{% if reference.title %} title="{{ reference.title }} [{{ reference.date }}]{% if reference.archiveURL %}[Archived]{% endif %}"{% endif %} data-datetime="{% if reference.datetime %}{{ reference.datetime }}{% else %}{{ reference.date }}{% endif %}"><sup>{{ forloop.index }}</sup></a>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></dd>
 	{%- endfor %}
 											</dl>

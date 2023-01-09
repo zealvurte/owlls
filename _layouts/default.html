@@ -14,8 +14,8 @@
 		<link rel="icon" href="images/owlls-favicon-48x48.webp" type="image/webp" sizes="48x48"/><!-- 1.5x : 144ppi -->
 		<link rel="icon" href="images/owlls-favicon-32x32.webp" type="image/webp" sizes="32x32"/><!-- 1x : 96ppi -->
 		
-		<link type="font/woff2" href="fonts/Rajdhani-Bold.woff2" as="font" rel="preload" blocking="render" crossorigin/>
-		<link type="text/css" href="styles/owlls.css" rel="stylesheet"/>
+		<link rel="preload" href="fonts/Rajdhani-Bold.woff2" type="font/woff2" as="font" blocking="render" crossorigin/>
+		<link rel="stylesheet" href="styles/owlls.css" type="text/css"/>
 		<script type="module" src="scripts/owlls.js"></script>
 	</head>
 	<body id="owlls">
@@ -50,12 +50,12 @@
 		</header>
 		<div id="wrapper" class="wrapper">
 			<main id="content">
-				<div id="no-skins" class="group" data-state="active">
+				<div id="no-skins" class="group">
 					<p><strong>No skins found.</strong></p>
 				</div>{{ content }}
 			</main>
 			<footer id="outro"></footer>
 		</div>
-		<div id="tooltip" class="tooltip" data-state="inert"></div>
+		<div id="tooltip" role="tooltip" data-hidden hidden></div>
 	</body>
 </html>
