@@ -15,11 +15,11 @@ slug: home
 					</header>
 					<div class="wrapper">
 						<main>
-							<p><button type="button" data-action="expandable.expand;visibility.show;scrollTo.start" data-target="#{{ skinID }};#{{ skinID }}_info;#{{ skinID }}_info" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Show information"><img src="images/{{ skinImage }}.webp" alt="" width="600" height="600" loading="lazy"/></button></p>
+							<p><button type="button" data-action="skin.expand" data-target="#{{ skinID }}" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Show information"><img src="images/{{ skinImage }}.webp" alt="" width="600" height="600" loading="lazy"/></button></p>
 							<section id="{{ skinID }}_info" class="skin-info" data-hidden hidden>
 								<header>
 									<h3>Information</h3>
-									<p><button type="button" class="icon icon-close" data-action="visibility.hide;expandable.collapse" data-target="#{{ skinID }}_info;#{{ skinID }}" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Hide information"></button></p>
+									<p><button type="button" class="icon icon-close" data-action="skin.collapse" data-target="#{{ skinID }}" aria-controls="{{ skinID }}" aria-expanded="false" aria-label="Hide information"></button></p>
 								</header>
 								<div class="wrapper">
 									<main>
