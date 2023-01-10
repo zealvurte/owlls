@@ -1596,3 +1596,69 @@ span.hyphen-nobreak {
 #owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://twitter.com"],[data-archived-url^="https://twitter.com"])::before {
 	background-image: url(../images/twitter-favicon-32x32.webp);
 }
+@media (prefers-reduced-motion) {
+	input[type="search"]::-webkit-search-cancel-button,
+	input[type="search"]:is([data-value]:not([data-value=""]),:not(:placeholder-shown))::-webkit-search-cancel-button,
+	input[type="search"]:is([data-value]:not([data-value=""]),:not(:placeholder-shown)):is(:hover,:focus)::-webkit-search-cancel-button,
+	input[type="checkbox"]::before,
+	input[type="checkbox"]:checked::before,
+	#owlls article.skin > div.wrapper > main > p::before,
+	#owlls article.skin:hover > div.wrapper > main > p::before,
+	#owlls article.skin > div.wrapper > main > p:has(> button:focus)::before,
+	#owlls article.skin > div.wrapper > main > p > button > img,
+	#owlls article.skin:hover > div.wrapper > main > p > button > img,
+	#owlls article.skin > div.wrapper > main > p > button:focus > img {
+		transform: none;
+	}
+	input[type="checkbox"]::before {
+		opacity: 0;
+		
+		transition: background-color var(--transition-short-duration) var(--transition-easing), opacity var(--transition-short-duration) var(--transition-easing);
+	}
+	input[type="checkbox"]:checked::before {
+		opacity: 1;
+	}
+	@keyframes skin-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes skin-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes skin-expanded-info-icon-out {
+		0% {
+			opacity: 1;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+	@keyframes skin-info-in {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@keyframes skin-info-out {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+}
