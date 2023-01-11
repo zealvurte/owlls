@@ -1515,27 +1515,37 @@ span.hyphen-nobreak {
 #owlls section.skin-info > header > p > button::before {
 	inset: var(--margin-thin);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > * {
+#owlls section.skin-info > div.wrapper > main > div.group {
+	overflow: visible;
+}
+#owlls section.skin-info > div.wrapper > main > h4 {
+	position: sticky;
+	top: calc(-1px - var(--margin));
+	
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	text-align: center;
+	text-transform: none;
+	
+	background-image: linear-gradient(90deg,var(--background-color),var(--light-background-color),var(--background-color));
+	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+#owlls section.skin-info > div.wrapper > main > * {
 	padding: var(--padding-thin);
 	margin-bottom: 0;
 	
 	background-color: var(--background-color);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > :first-child {
-	position: sticky;
-	top: calc(-1px - var(--margin));
-	
-	font-weight: bold;
-	text-align: center;
-	
-	background-image: linear-gradient(90deg,var(--background-color),var(--light-background-color),var(--background-color));
-	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
-}
-#owlls section.skin-info > div.wrapper > main > div.group:first-child > :first-child {
+#owlls section.skin-info > div.wrapper > main > :first-child {
 	border-top-left-radius: var(--border-radius);
 	border-top-right-radius: var(--border-radius);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl {
+#owlls section.skin-info > div.wrapper > main > :last-child {
+	border-bottom-left-radius: var(--border-radius);
+	border-bottom-right-radius: var(--border-radius);
+}
+#owlls section.skin-info > div.wrapper > main > dl {
 	display: grid;
 	grid-template-columns: minmax(min-content,1fr) minmax(auto,2fr);
 	grid-auto-rows: minmax(calc(var(--line-space) + var(--padding-vertical-thin) * 2));
@@ -1543,31 +1553,27 @@ span.hyphen-nobreak {
 	
 	text-align: left;
 }
-#owlls section.skin-info > div.wrapper > main > div.group:last-child > dl {
-	border-bottom-left-radius: var(--border-radius);
-	border-bottom-right-radius: var(--border-radius);
-}
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dt {
+#owlls section.skin-info > div.wrapper > main > dl > dt {
 	grid-column: 1;
 	padding: var(--padding-thin);
 	
 	text-align: right;
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd {
+#owlls section.skin-info > div.wrapper > main > dl > dd {
 	grid-column: 2;
 	margin-left: 0;
 	padding: var(--padding-thin);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dt.double-row-header {
+#owlls section.skin-info > div.wrapper > main > dl > dt.double-row-header {
 	grid-row-end: span 2;
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > .historic {
+#owlls section.skin-info > div.wrapper > main > dl > .historic {
 	color: var(--disabled-text-color);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a[href].reference {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a[href].reference {
 	
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a[href].reference::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a[href].reference::before {
 	content: '';
 	display: inline-block;
 	width: calc(var(--line-space) * 0.75);
@@ -1578,22 +1584,22 @@ span.hyphen-nobreak {
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference.archived::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference.archived::before {
 	filter: sepia(1);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://playoverwatch.com"],[href^="https://overwatch.blizzard.com"],[data-archived-url^="https://playoverwatch.com"],[data-archived-url^="https://overwatch.blizzard.com"])::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference:is([href^="https://playoverwatch.com"],[href^="https://overwatch.blizzard.com"],[data-archived-url^="https://playoverwatch.com"],[data-archived-url^="https://overwatch.blizzard.com"])::before {
 	background-image: url(../images/ow-favicon-31x31.webp);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://us.forums.blizzard.com/en/overwatch"],[data-archived-url^="https://us.forums.blizzard.com/en/overwatch"])::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference:is([href^="https://us.forums.blizzard.com/en/overwatch"],[data-archived-url^="https://us.forums.blizzard.com/en/overwatch"])::before {
 	background-image: url(../images/ow-forums-favicon-32x32.webp);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://overwatchleague.com"],[data-archived-url^="https://overwatchleague.com"])::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference:is([href^="https://overwatchleague.com"],[data-archived-url^="https://overwatchleague.com"])::before {
 	background-image: url(../images/owl-favicon-32x32.webp);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://blizzard.com"],[data-archived-url^="https://blizzard.com"])::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference:is([href^="https://blizzard.com"],[data-archived-url^="https://blizzard.com"])::before {
 	background-image: url(../images/blizzard-favicon-32x32.webp);
 }
-#owlls section.skin-info > div.wrapper > main > div.group > dl > dd > small.references > a.reference:is([href^="https://twitter.com"],[data-archived-url^="https://twitter.com"])::before {
+#owlls section.skin-info > div.wrapper > main > dl > dd > small.references > a.reference:is([href^="https://twitter.com"],[data-archived-url^="https://twitter.com"])::before {
 	background-image: url(../images/twitter-favicon-32x32.webp);
 }
 @media (prefers-reduced-motion) {

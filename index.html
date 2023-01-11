@@ -23,42 +23,34 @@ slug: home
 								</header>
 								<div class="wrapper">
 									<main>
-										<div class="group">
-											<p>General</p>
-											<dl>
-												<dt>Name</dt>
-												<dd>{{ skin.name }}</dd>
-												<dt>Hero</dt>
-												<dd>{{ skin.hero }}</dd>
-											</dl>
-										</div>
-										<div class="group">
-											<p>Background</p>
-											<dl>
-												<dt>Season</dt>
-												<dd>{{ skin.season }}</dd>
-												<dt>Event</dt>
-												<dd>{{ skin.event }}</dd>
-												<dt>Themes</dt>
-												<dd>{{ skin.themes | join: ", " }}</dd>
-											</dl>
-										</div>
+										<h4>General</h4>
+										<dl>
+											<dt>Name</dt>
+											<dd>{{ skin.name }}</dd>
+											<dt>Hero</dt>
+											<dd>{{ skin.hero }}</dd>
+										</dl>
+										<h4>Background</h4>
+										<dl>
+											<dt>Season</dt>
+											<dd>{{ skin.season }}</dd>
+											<dt>Event</dt>
+											<dd>{{ skin.event }}</dd>
+											<dt>Themes</dt>
+											<dd>{{ skin.themes | join: ", " }}</dd>
+										</dl>
 	{%- if skin.article -%}
 		{%- assign article = skin.article -%}
-										<div class="group">
-											<p>Article</p>
-											<p><a href="{% if article.archiveURL %}{{ article.archiveURL }}{% else %}{{ article.url }}{% endif %}" target="_blank" rel="external noopener"{% if article.archiveURL %} class="archived" data-archived-url="{{ article.url}}"{% endif %}{% if article.title %} title="{{ article.title }}"{% endif %}>{% if article.title %}{{ article.title }}{% else %}{{ article.url }}{% endif %} [<time datetime="{% if article.datetime %}{{ article.datetime }}{% else %}{{ article.date }}{% endif %}"><span class="hyphen-nobreak">{{ article.date }}</span></time>]{% if article.archiveURL %}[Archived]{% endif %}</a></p>
-										</div>
+										<h4>Article</h4>
+										<p><a href="{% if article.archiveURL %}{{ article.archiveURL }}{% else %}{{ article.url }}{% endif %}" target="_blank" rel="external noopener"{% if article.archiveURL %} class="archived" data-archived-url="{{ article.url}}"{% endif %}{% if article.title %} title="{{ article.title }}"{% endif %}>{% if article.title %}{{ article.title }}{% else %}{{ article.url }}{% endif %} [<time datetime="{% if article.datetime %}{{ article.datetime }}{% else %}{{ article.date }}{% endif %}"><span class="hyphen-nobreak">{{ article.date }}</span></time>]{% if article.archiveURL %}[Archived]{% endif %}</a></p>
 	{%- endif -%}
-										<div class="group">
-											<p>Availability</p>
-											<dl>
+										<h4>Availability</h4>
+										<dl>
 	{%- for availability in skinAvailabilities %}
-												<dt class="double-row-header{% unless forloop.first %} historic{% endunless %}"><time class="start" datetime="{{ availability.period.start | default: "" }}"><span class="hyphen-nobreak{% if availability.period.startNote %} note" data-tooltip="{{ availability.period.startNote}}" tabindex="0"{% endif %}">{{ availability.period.start | default: "unknown" }}</span></time> – <time class="end" datetime="{{ availability.period.end | default: "" }}"><span class="hyphen-nobreak{% if availability.period.endNote %} note" data-tooltip="{{ availability.period.endNote}}" tabindex="0"{% endif %}">{{ availability.period.end | default: "unknown" }}</span></time></dt>
-												<dd{% unless forloop.first %} class="historic"{% endunless %}>{{ availability.source }}, {{ availability.cost }} <img class="owl-token" title="OWL Token" src="images/owl-token.svg" alt="OWL Tokens" width="220" height="220" loading="lazy"/><br/><small class="references">References: {% for reference in availability.references %}<a href="{% if reference.archiveURL %}{{ reference.archiveURL }}{% else %}{{ reference.url }}{% endif %}" target="_blank" rel="external noopener" class="reference{% if reference.archiveURL %} archived" data-archived-url="{{ reference.url }}{% endif %}"{% if reference.title %} title="{{ reference.title }} [{{ reference.date }}]{% if reference.archiveURL %}[Archived]{% endif %}"{% endif %} data-datetime="{% if reference.datetime %}{{ reference.datetime }}{% else %}{{ reference.date }}{% endif %}"><sup>{{ forloop.index }}</sup></a>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></dd>
+											<dt class="double-row-header{% unless forloop.first %} historic{% endunless %}"><time class="start" datetime="{{ availability.period.start | default: "" }}"><span class="hyphen-nobreak{% if availability.period.startNote %} note" data-tooltip="{{ availability.period.startNote}}" tabindex="0"{% endif %}">{{ availability.period.start | default: "unknown" }}</span></time> – <time class="end" datetime="{{ availability.period.end | default: "" }}"><span class="hyphen-nobreak{% if availability.period.endNote %} note" data-tooltip="{{ availability.period.endNote}}" tabindex="0"{% endif %}">{{ availability.period.end | default: "unknown" }}</span></time></dt>
+											<dd{% unless forloop.first %} class="historic"{% endunless %}>{{ availability.source }}, {{ availability.cost }} <img class="owl-token" title="OWL Token" src="images/owl-token.svg" alt="OWL Tokens" width="220" height="220" loading="lazy"/><br/><small class="references">References: {% for reference in availability.references %}<a href="{% if reference.archiveURL %}{{ reference.archiveURL }}{% else %}{{ reference.url }}{% endif %}" target="_blank" rel="external noopener" class="reference{% if reference.archiveURL %} archived" data-archived-url="{{ reference.url }}{% endif %}"{% if reference.title %} title="{{ reference.title }} [{{ reference.date }}]{% if reference.archiveURL %}[Archived]{% endif %}"{% endif %} data-datetime="{% if reference.datetime %}{{ reference.datetime }}{% else %}{{ reference.date }}{% endif %}"><sup>{{ forloop.index }}</sup></a>{% unless forloop.last %}, {% endunless %}{% endfor %}</small></dd>
 	{%- endfor %}
-											</dl>
-										</div>
+										</dl>
 									</main>
 									<footer></footer>
 								</div>
