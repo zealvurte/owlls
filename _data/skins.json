@@ -28,6 +28,21 @@
 						"date": "2021-07-06"
 					}
 				]
+			},
+			{
+				"period": {
+					"start": "2023-02-07"
+				},
+				"source": "Overwatch Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1623039345702670353",
+						"title": "Some eagerly-awaited fan favorites have arrived 👀",
+						"date": "2023-02-07",
+						"datetime": "2023-02-07T19:21:49.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -57,6 +72,21 @@
 						"url": "https://overwatchleague.com/en-us/news/pirate-ship-bastion-skin-sets-sail-for-countdown-cup-tournament",
 						"title": "Pirate Ship Bastion Skin Sets Sail for Countdown Cup Tournament",
 						"date": "2021-08-18"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2023-02-07"
+				},
+				"source": "Overwatch Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1623039345702670353",
+						"title": "Some eagerly-awaited fan favorites have arrived 👀",
+						"date": "2023-02-07",
+						"datetime": "2023-02-07T19:21:49.000Z"
 					}
 				]
 			}
@@ -176,7 +206,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -186,6 +217,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -359,7 +396,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -369,6 +407,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -548,7 +592,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -558,6 +603,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -590,6 +641,21 @@
 						"url": "https://overwatchleague.com/en-us/news/mm-mei-legendary-skin-commemorates-may-melee-tournament",
 						"title": "MM-Mei Legendary Skin Commemorates May Melee Tournament",
 						"date": "2021-04-28"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2023-02-07"
+				},
+				"source": "Overwatch Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1623039345702670353",
+						"title": "Some eagerly-awaited fan favorites have arrived 👀",
+						"date": "2023-02-07",
+						"datetime": "2023-02-07T19:21:49.000Z"
 					}
 				]
 			}
@@ -642,7 +708,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -652,6 +719,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -952,7 +1025,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -962,6 +1036,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -1126,7 +1206,8 @@
 			},
 			{
 				"period": {
-					"start": "2023-01-05"
+					"start": "2023-01-05",
+					"end": "2023-02-06"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
@@ -1136,6 +1217,12 @@
 						"title": "Get ready to make some waves 🌊",
 						"date": "2023-01-05",
 						"datetime": "2023-01-05T19:08:50.000Z"
+					},
+					{
+						"url": "https://twitter.com/overwatchleague/status/1622671971329744916",
+						"title": "1️⃣ DAY LEFT",
+						"date": "2023-02-06",
+						"datetime": "2023-02-06T19:02:00.000Z"
 					}
 				]
 			}
@@ -1168,6 +1255,21 @@
 						"url": "https://overwatchleague.com/en-us/news/ange-de-la-mort-legendary-skin-commemorates-june-joust-tournament",
 						"title": "Ange de la Mort Legendary Skin Commemorates June Joust Tournament",
 						"date": "2021-06-09"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2023-02-07"
+				},
+				"source": "Overwatch Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1623039345702670353",
+						"title": "Some eagerly-awaited fan favorites have arrived 👀",
+						"date": "2023-02-07",
+						"datetime": "2023-02-07T19:21:49.000Z"
 					}
 				]
 			}
