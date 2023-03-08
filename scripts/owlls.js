@@ -384,8 +384,10 @@ const isSkinCurrentlyAvailable = function (start,end) {
 	const now = Date.now()
 	return (start ? new Date(start) <= now : true) && (end ? new Date(end) >= now : true)
 }
+let skinsAvailable = false
 skinArticles.forEach(s => {
 	const available = isSkinCurrentlyAvailable(getElementData(s,'availability-start','string'),getElementData(s,'availability-end','string'))
+	skinsAvailable = skinsAvailable || available
 	setElementData(s,'available',available,'boolean')
 	if (!available) {
 		s.querySelectorAll('section.skin-info main div.group:last-child :is(dt,dd):not(.historic)').forEach(hp => hp.classList.add('historic'))
@@ -409,6 +411,7 @@ const filterSkins = function (skin) {
 	return show
 }
 const navFilters = [navHeroSelect,navAvailabilityCheckbox]
+if (!skinsAvailable) navAvailabilityCheckbox.checked = false
 navFilters.forEach(f => f.addEventListener('change',filtersChanged))
 navSearch.addEventListener('input',filtersChanged)
 filtersChanged()
