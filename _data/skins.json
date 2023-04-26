@@ -1379,6 +1379,32 @@
 		]
 	},
 	{
+		"name": "Rock Climber",
+		"hero": "Zarya",
+		"season": "2023",
+		"event": "None (shouldn't be an OWL legendary skin)",
+		"themes": [
+			"Rock Climbing"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-04-25"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1650930374069952512",
+						"title": "Don't end this one on a cliffhanger 🧗",
+						"date": "2023-04-25",
+						"datetime": "2023-04-25T18:30:48.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
 		"name": "Zen-Nakji",
 		"hero": "Zenyatta",
 		"season": "2018",
