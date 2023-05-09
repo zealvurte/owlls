@@ -382,7 +382,7 @@ const toogleSkinExpandability = function (skin) {
 }
 const isSkinCurrentlyAvailable = function (start,end) {
 	const now = Date.now()
-	return (start ? new Date(start) <= now : true) && (end ? new Date(end) >= now : true)
+	return (start ? new Date(start).setHours(0,0,0,0) <= now : true) && (end ? new Date(end).setHours(23,59,59,999) >= now : true)
 }
 let skinsAvailable = false
 skinArticles.forEach(s => {
