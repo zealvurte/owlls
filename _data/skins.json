@@ -828,6 +828,33 @@
 		]
 	},
 	{
+		"name": "Wicked",
+		"hero": "Moira",
+		"season": "2023",
+		"event": "None (shouldn't be an OWL legendary skin)",
+		"themes": [
+			"Fairy tales",
+			"Wicked Queen"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-06-13"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1668689113376247808",
+						"title": "Something Wicked this way comes... or rather, has arrived 🌹",
+						"date": "2023-06-13",
+						"datetime": "2023-06-13T18:37:42.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
 		"name": "Luchador",
 		"hero": "Reaper",
 		"season": "2022",
