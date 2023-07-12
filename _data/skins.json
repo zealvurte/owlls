@@ -839,7 +839,8 @@
 		"availabilities": [
 			{
 				"period": {
-					"start": "2023-06-13"
+					"start": "2023-06-13",
+					"end": "2023-07-11"
 				},
 				"source": "Overwatch 2 Store",
 				"cost": 300,
