@@ -291,6 +291,22 @@
 						"datetime": "2022-11-17T19:05:41.000Z"
 					}
 				]
+			},
+			{
+				"period": {
+					"start": "2023-08-10",
+					"end": "2023-08-15"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689716370827587585",
+						"title": "‼️THIS IS NOT A DRILL ‼️",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T19:12:30.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -728,6 +744,22 @@
 						"title": "1️⃣ DAY LEFT",
 						"date": "2023-02-06",
 						"datetime": "2023-02-06T19:02:00.000Z"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2023-08-10",
+					"end": "2023-08-15"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689716370827587585",
+						"title": "‼️THIS IS NOT A DRILL ‼️",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T19:12:30.000Z"
 					}
 				]
 			}
@@ -1304,6 +1336,22 @@
 						"datetime": "2023-02-07T19:21:49.000Z"
 					}
 				]
+			},
+			{
+				"period": {
+					"start": "2023-08-10",
+					"end": "2023-08-15"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689716370827587585",
+						"title": "‼️THIS IS NOT A DRILL ‼️",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T19:12:30.000Z"
+					}
+				]
 			}
 		]
 	},
@@ -1407,6 +1455,60 @@
 		]
 	},
 	{
+		"name": "Charged Climber",
+		"hero": "Zarya",
+		"season": "2023",
+		"event": "Who even cares anymore? - Blizzard sure don't",
+		"themes": [
+			"Rock Climbing",
+			"Guangzhou Charge"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-08-10"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689743422872342531",
+						"title": "Crush the Enemy! 🧗 ",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T21:00:00.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Reigning Climber",
+		"hero": "Zarya",
+		"season": "2023",
+		"event": "Who even cares anymore? - Blizzard sure don't",
+		"themes": [
+			"Rock Climbing",
+			"Atlanta Reign"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-08-10"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689743422872342531",
+						"title": "Crush the Enemy! 🧗 ",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T21:00:00.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
 		"name": "Rock Climber",
 		"hero": "Zarya",
 		"season": "2023",
@@ -1503,6 +1605,22 @@
 						"title": "New year, new vault skins dropping 1/5 👀⭐",
 						"date": "2023-01-03",
 						"datetime": "2023-01-03T21:03:04.000Z"
+					}
+				]
+			},
+			{
+				"period": {
+					"start": "2023-08-10",
+					"end": "2023-08-15"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1689716370827587585",
+						"title": "‼️THIS IS NOT A DRILL ‼️",
+						"date": "2023-08-10",
+						"datetime": "2023-08-10T19:12:30.000Z"
 					}
 				]
 			}
