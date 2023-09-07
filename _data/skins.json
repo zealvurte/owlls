@@ -936,6 +936,40 @@
 		]
 	},
 	{
+		"name": "Wicked Reign",
+		"hero": "Moira",
+		"season": "2023",
+		"event": "Midseason Madness win by Atlanta Reign",
+		"themes": [
+			"Fairy tales",
+			"Wicked Queen",
+			"Atlanta Reign"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-09-07"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 200,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1668689113376247808",
+						"title": "The Queen herself is back with the look of our Reigning champs🌹",
+						"date": "2023-09-07",
+						"datetime": "2023-09-07T18:40:19.000Z"
+					},
+					{
+						"url": "https://overwatchleague.com/en-us/cosmetics",
+						"archiveURL": "https://web.archive.org/web/20230907195557/https://overwatchleague.com/en-us/cosmetics",
+						"title": "Overwatch League In-Game Shop |  The Overwatch League",
+						"date": "2023-09-07"
+					}
+				]
+			}
+		]
+	},
+	{
 		"name": "Luchador",
 		"hero": "Reaper",
 		"season": "2022",
@@ -1226,6 +1260,32 @@
 						"title": "Even more fan favorite Legendary skins are BACK 😤  ",
 						"date": "2023-08-15",
 						"datetime": "2023-08-15T18:18:11.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
+		"name": "Biker 76",
+		"hero": "Soldier: 76",
+		"season": "2023",
+		"event": "None (shouldn't be an OWL legendary skin)",
+		"themes": [
+			"Bikers"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2022-09-07"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://overwatchleague.com/en-us/cosmetics",
+						"archiveURL": "https://web.archive.org/web/20230907195557/https://overwatchleague.com/en-us/cosmetics",
+						"title": "Overwatch League In-Game Shop |  The Overwatch League",
+						"date": "2023-09-07"
 					}
 				]
 			}
