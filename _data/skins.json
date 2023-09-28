@@ -977,6 +977,35 @@
 		]
 	},
 	{
+		"name": "Chained King",
+		"hero": "Reaper",
+		"season": "2022",
+		"event": "Grand Final win by Dallas Fuel",
+		"themes": [
+			"Chains",
+			"Domination (World of Warcraft: Shadowlands)",
+			"Zovaal, The Jailer (World of Wacraft: Shadowlands)",
+			"Dallas Fuel"
+		],
+		"availabilities": [
+			{
+				"period": {
+					"start": "2023-09-26"
+				},
+				"source": "Overwatch 2 Store",
+				"cost": 300,
+				"references": [
+					{
+						"url": "https://twitter.com/overwatchleague/status/1706734241357193718",
+						"title": "Beware the shadows, for the Chained King awaits  💀",
+						"date": "2023-09-26",
+						"datetime": "2023-09-26T18:15:27.000Z"
+					}
+				]
+			}
+		]
+	},
+	{
 		"name": "Luchador",
 		"hero": "Reaper",
 		"season": "2022",
